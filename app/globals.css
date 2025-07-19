@@ -46,6 +46,6 @@ p {
 }
 
 ::selection {
-  background-color: var(--color-neutral-300);
-  color: black;
+  background-color: var(--color-neutral-600);
+  color: var(--color-neutral-200);
 }

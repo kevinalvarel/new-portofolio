@@ -20,7 +20,7 @@ const Hero = () => {
             }}
           >
             <div className="block md:hidden col-span-1 mx-auto my-10">
-              <div className="bg-slate-500 rounded-full h-60 w-60 grayscale hover:grayscale-0 transition-all ease duration-300">
+              <div className="bg-slate-500 rounded-full h-60 w-60 transition-all  grayscale blur-xs hover:blur-none hover:grayscale-0 duration-300 ease">
                 <Image
                   src={Me}
                   width={500}
@@ -99,8 +99,8 @@ const Hero = () => {
             }}
           >
             <motion.div
-              className="rounded-full h-auto w-auto lg:px-12 grayscale hover:grayscale-0 "
-              whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
+              className="rounded-full h-auto w-auto lg:px-12 grayscale blur-xs hover:blur-none hover:grayscale-0 duration-100"
+              whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
             >
               <Image
                 src={Me}
