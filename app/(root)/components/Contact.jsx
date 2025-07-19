@@ -55,7 +55,7 @@ const Contact = () => {
               type: "spring",
             }}
           >
-            Contact Me
+            Contact
           </motion.h1>
           <motion.p
             className="title text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] md:mb-5"

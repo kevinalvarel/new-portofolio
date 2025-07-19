@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
 
 @import "tailwindcss";
@@ -22,7 +22,7 @@ html {
 body {
   font-family: "Poppins", sans-serif !important;
   color: black;
-  background-color: rgb(255, 252, 251);
+  background-color: rgb(248, 248, 248);
 }
 
 h1,
@@ -31,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Jost", sans-serif !important;
+  font-family: "Barlow Condensed", sans-serif !important;
 }
 
 p {
@@ -48,4 +48,8 @@ p {
 ::selection {
   background-color: var(--color-neutral-600);
   color: var(--color-neutral-200);
+}
+
+@theme inline {
+  --color-background: rgb(248, 248, 248);
 }
