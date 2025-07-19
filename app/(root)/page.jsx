@@ -1,6 +1,7 @@
-import About from "@/components/ui/About";
-import Hero from "@/components/ui/Hero";
-import Project from "@/components/ui/Project";
+import About from "@/app/(root)/components/About";
+import Hero from "@/app/(root)/components/Hero";
+import Project from "@/app/(root)/components/Project";
+import Contact from "./components/Contact";
 
 const Homepage = () => {
   return (
@@ -8,6 +9,7 @@ const Homepage = () => {
       <Hero />
       <About />
       <Project />
+      <Contact />
     </>
   );
 };

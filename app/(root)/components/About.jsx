@@ -1,13 +1,15 @@
 "use client";
 import React from "react";
 import { motion } from "motion/react";
+import Button from "@/components/Button";
+import Link from "next/link";
 
 const About = () => {
   return (
-    <div className="section">
+    <div className="section" id="about">
       <div className="mx-auto container overflow-hidden p-10 md:px-20 ">
         <motion.div
-          className="col-span-2 flex flex-col justify-center items-center text-center md:text-start"
+          className="col-span-2 flex flex-col justify-center items-center text-center md:text-start py-5"
           initial={{ y: -100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{
@@ -16,21 +18,21 @@ const About = () => {
         >
           <motion.h2
             className="text-black text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl font-bold my-2 md:my-5"
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{
-              delay: 0.3,
+              delay: 0.4,
               type: "spring",
             }}
           >
             About Me
           </motion.h2>
           <motion.p
-            className="title text-center text-md  2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
+            className="title text-md  2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{
-              delay: 0.4,
+              delay: 0.5,
               type: "spring",
             }}
           >
@@ -40,7 +42,7 @@ const About = () => {
             interfaces using technologies like React, Tailwind CSS, and Next.js.
           </motion.p>
           <motion.p
-            className="title text-center text-md  2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
+            className="title text-md  2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{
@@ -53,6 +55,19 @@ const About = () => {
             create smarter, more personalized applications that adapt to user
             needs.
           </motion.p>
+        </motion.div>
+        <motion.div
+          initial={{ y: 40, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.3,
+            type: "spring",
+          }}
+          className="flex items-center justify-center"
+        >
+          <Button variation="primary">
+            <Link href="/about">Learn More</Link>
+          </Button>
         </motion.div>
       </div>
     </div>

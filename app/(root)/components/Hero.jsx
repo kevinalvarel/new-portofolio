@@ -9,7 +9,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <>
-      <div className="section">
+      <div className="section" id="home">
         <div className="mx-auto container grid grid-cols-1 md:grid-cols-3 gap-4 p-10 overflow-hidden md:px-20 ">
           <motion.div
             className="col-span-2 flex flex-col justify-center items-center md:items-start text-center md:text-start"

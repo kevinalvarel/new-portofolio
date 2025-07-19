@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Me from "@/public/images/ver.jpg";
+import MyProject from "@/public/images/project.png";
 import { motion } from "motion/react";
 import Image from "next/image";
 import Button from "@/components/Button";
@@ -8,11 +8,11 @@ import Link from "next/link";
 
 const Project = () => {
   return (
-    <div className="section">
+    <div className="section" id="project">
       <div className="relative md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
         <div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
           <motion.div
-            className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 "
+            className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale blur-xs hover:blur-none hover:grayscale-0 duration-100 rounded-bl-4xl rounded-tl-4xl rounded-r-lg shadow-2xl"
             initial={{
               x: 300,
               opacity: 0,
@@ -31,10 +31,10 @@ const Project = () => {
             }}
           >
             <Image
-              src={Me}
+              src={MyProject}
               layout="fill"
-              className="object-cover"
-              alt="Alvalens Setup"
+              className="object-cover rounded-bl-4xl rounded-tl-4xl rounded-r-lg "
+              alt="Kevin Project"
               placeholder="blur"
             />
           </motion.div>
@@ -63,8 +63,8 @@ const Project = () => {
             This is some of my projects that I have done{" "}
           </motion.p>
           <motion.div
-            initial={{ y: 40, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ y: 40, scale: 0, opacity: 0 }}
+            whileInView={{ y: 0, scale: 1, opacity: 1 }}
             transition={{
               delay: 0.3,
               type: "spring",
