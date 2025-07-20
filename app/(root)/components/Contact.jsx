@@ -30,7 +30,7 @@ const Contact = () => {
               z: 0,
             }}
             transition={{
-              delay: 0.5,
+              delay: 0.2,
               type: "spring",
               stiffness: 100,
               damping: 20,
@@ -47,11 +47,11 @@ const Contact = () => {
         </div>
         <div className="z-10 w-full absolute md:w-auto  md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 overflow-hidden">
           <motion.h1
-            className="bg-white lg:bg-transparent bg-opacity-50 px-3 md-px-0 text-black text-5xl md:text-8xl font-bold mb-3"
+            className="bg-background rounded-tr-3xl  lg:bg-transparent bg-opacity-50 px-4 md:px-0 text-black text-5xl md:text-8xl font-bold mb-3"
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{
-              delay: 0.1,
+              delay: 0.3,
               type: "spring",
             }}
           >
@@ -62,7 +62,7 @@ const Contact = () => {
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{
-              delay: 0.2,
+              delay: 0.35,
               type: "spring",
             }}
           >
