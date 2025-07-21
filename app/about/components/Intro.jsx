@@ -116,18 +116,13 @@ export default function Intro() {
               {" "}
               passionate Web Developer
             </span>{" "}
-            with a growing expertise in
-            <span className="text-black font-medium">
-              {" "}
-              Artificial Intelligence.
-            </span>{" "}
-            Hailing from Pasuruan, East Java, Indonesia, I&rsquo;m currently
-            pursuing my degree in{" "}
-            <span className="text-black font-medium">
+            with a growing expertise in I&rsquo;m currently pursuing my degree
+            in <span className="text-black font-medium">
               Computer Science
-            </span> at{" "}
+            </span>{" "}
+            at{" "}
             <span className="text-black font-medium">
-              Universitas Negeri Malang.
+              Universitas Al-Khairiyah
             </span>{" "}
             My work bridges modern web technologies and intelligent systems—from
             building responsive, scalable websites to exploring generative AI
