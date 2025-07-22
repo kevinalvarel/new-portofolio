@@ -68,6 +68,7 @@ export const Timeline = ({ data }) => {
                 <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-800">
                   {item.title}
                 </h3>
+                {item.description}
                 {item.content}{" "}
               </div>
             </div>
