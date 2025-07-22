@@ -32,7 +32,7 @@ export default function Intro() {
               >
                 <Image
                   src={Me1}
-                  alt="Alvalens"
+                  alt="Kev"
                   layout="fill"
                   objectFit="cover"
                   placeholder="blur"
@@ -56,7 +56,7 @@ export default function Intro() {
               >
                 <Image
                   src={Me1}
-                  alt="Alvalens"
+                  alt="Kev"
                   layout="fill"
                   objectFit="cover"
                   placeholder="blur"
@@ -82,7 +82,7 @@ export default function Intro() {
               >
                 <Image
                   src={Me1}
-                  alt="Alvalens"
+                  alt="Kev"
                   layout="fill"
                   objectFit="cover"
                   placeholder="blur"
@@ -108,7 +108,7 @@ export default function Intro() {
           }}
         >
           <h2 className="text-2xl font-bold tracking-wider mb-3">
-            Muhammd Kevin Alvarel
+            Muhammad Kevin Alvarel
           </h2>
           <p className="text-gray-600 text-justify title text-lg">
             Hey there, I&rsquo;m Muhammad Kevin Alvarel, a
@@ -125,10 +125,9 @@ export default function Intro() {
               Universitas Al-Khairiyah
             </span>{" "}
             My work bridges modern web technologies and intelligent systems—from
-            building responsive, scalable websites to exploring generative AI
-            and LLM-based solutions. Beyond development, I stay curious about
-            design and emerging technologies. In today&rsquo;s ever-changing
-            digital landscape, I believe being a
+            building responsive. I stay curious about design and emerging
+            technologies. In today&rsquo;s ever-changing digital landscape, I
+            believe being a
             <span className="text-black font-medium"> lifelong learner</span> is
             essential. Let&rsquo;s connect and explore the evolving intersection
             of web and AI together!
