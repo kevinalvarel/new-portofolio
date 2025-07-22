@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 
-import kontak from "@/public/images/ver.jpg";
+import kontak from "@/public/images/setup.jpg";
 
 import { motion } from "motion/react";
 import {

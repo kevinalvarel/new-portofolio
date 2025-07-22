@@ -36,8 +36,7 @@ export const Timeline = ({ data }) => {
       <div className="mt-3 flex flex-col justify-start items-center w-full pl-10 md:pl-32 ">
         <div className="flex justify-center items-center flex-col self-start px-4 md:px-8 lg:px-10">
           <p className="text-lg text-neutral-600">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis,
-            dolore!
+            A timeline of my journey as a developer, showcasing the projects
           </p>
         </div>
       </div>
