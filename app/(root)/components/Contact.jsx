@@ -6,6 +6,7 @@ import Image from "next/image";
 import kontak from "@/public/images/setup.jpg";
 
 import { motion } from "motion/react";
+
 import {
   IconBrandGithub,
   IconBrandLinkedin,
