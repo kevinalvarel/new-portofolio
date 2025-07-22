@@ -16,7 +16,7 @@ export const Timeline = ({ data }) => {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 10%", "end 50%"],
+    offset: ["start 10%", "end 42%"],
   });
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
@@ -59,9 +59,17 @@ export const Timeline = ({ data }) => {
                 <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-neutral-800 flex items-center justify-center">
                   <div className="h-4 w-4 rounded-full bg-neutral-700 border border-neutral-700 p-2" />
                 </div>
-                <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-800 ">
+                <motion.h3
+                  className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-800"
+                  initial={{ x: -50, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{
+                    delay: 0.3 + index * 0.1,
+                    type: "spring",
+                  }}
+                >
                   {item.title}
-                </h3>
+                </motion.h3>
               </div>
 
               <div className="relative pl-20 pr-4 md:pl-4 w-full">
@@ -84,7 +92,7 @@ export const Timeline = ({ data }) => {
                 height: heightTransform,
                 opacity: opacityTransform,
               }}
-              className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
+              className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-neutral-800 via-blue-900 to-transparent from-[0%] via-[10%] rounded-full"
             />
           </div>
         </div>
