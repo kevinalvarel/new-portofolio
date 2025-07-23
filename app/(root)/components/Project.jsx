@@ -24,7 +24,7 @@ const Project = () => {
               z: 0,
             }}
             transition={{
-              delay: 0.5,
+              delay: 0.4,
               type: "spring",
               stiffness: 100,
               damping: 20,
@@ -45,7 +45,7 @@ const Project = () => {
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{
-              delay: 0.6,
+              delay: 0.3,
               type: "spring",
             }}
           >

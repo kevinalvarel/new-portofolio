@@ -31,7 +31,7 @@ const Contact = () => {
               z: 0,
             }}
             transition={{
-              delay: 0.2,
+              delay: 0.3,
               type: "spring",
               stiffness: 100,
               damping: 20,
@@ -52,7 +52,7 @@ const Contact = () => {
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{
-              delay: 0.3,
+              delay: 0.2,
               type: "spring",
             }}
           >
