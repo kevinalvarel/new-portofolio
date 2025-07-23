@@ -36,6 +36,7 @@ export default function Intro() {
                   layout="fill"
                   objectFit="cover"
                   placeholder="blur"
+                  className="rounded-tl-3xl"
                 />
               </motion.div>
             </div>
@@ -60,6 +61,7 @@ export default function Intro() {
                   layout="fill"
                   objectFit="cover"
                   placeholder="blur"
+                  className="rounded-tr-3xl"
                 />
               </motion.div>
             </div>
@@ -86,6 +88,7 @@ export default function Intro() {
                   layout="fill"
                   objectFit="cover"
                   placeholder="blur"
+                  className="rounded-br-3xl"
                 />
               </motion.div>
             </div>
@@ -116,21 +119,20 @@ export default function Intro() {
               {" "}
               passionate Web Developer
             </span>{" "}
-            with a growing expertise in I&rsquo;m currently pursuing my degree
-            in <span className="text-black font-medium">
+            with a growing focus in modern technologies. I&rsquo;m currently
+            pursuing my degree in{" "}
+            <span className="text-black font-medium">
               Computer Science
-            </span>{" "}
-            at{" "}
+            </span> at{" "}
             <span className="text-black font-medium">
               Universitas Al-Khairiyah
-            </span>{" "}
-            My work bridges modern web technologies and intelligent systems—from
-            building responsive. I stay curious about design and emerging
-            technologies. In today&rsquo;s ever-changing digital landscape, I
-            believe being a
+            </span>
+            . My work blends responsive web development with smart systems.
+            I&rsquo;m always exploring new ideas in design and emerging tech. In
+            today&rsquo;s dynamic digital world, I believe being a
             <span className="text-black font-medium"> lifelong learner</span> is
-            essential. Let&rsquo;s connect and explore the evolving intersection
-            of web and AI together!
+            key. Let&rsquo;s connect and dive into the future of web and AI
+            together!
           </p>
         </motion.div>
       </div>

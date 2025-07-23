@@ -62,8 +62,8 @@ export const Timeline = ({ data }) => {
                   className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-800"
                   initial={{ x: -50, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: true }}
                   transition={{
-                    delay: 0.3 + index * 0.1,
                     type: "spring",
                   }}
                 >
