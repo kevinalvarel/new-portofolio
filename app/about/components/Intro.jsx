@@ -36,11 +36,11 @@ export default function Intro() {
                   layout="fill"
                   objectFit="cover"
                   placeholder="blur"
-                  className="rounded-tl-3xl"
+                  className="rounded-l-3xl"
                 />
               </motion.div>
             </div>
-            <div className="absolute top-16 right-28 w-[30%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
+            <div className="absolute top-16 md:right-28 right-20 w-[30%]  aspect-square grayscale hover:grayscale-0 transition-all ease duration-300">
               <motion.div
                 initial={{
                   opacity: 0,
