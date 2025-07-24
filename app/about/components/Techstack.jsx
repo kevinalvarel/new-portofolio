@@ -6,7 +6,7 @@ function Title() {
   return (
     <div className="mt-10 sm:mt-20 flex flex-col justify-start items-center w-full pl-10 md:pl-32 ">
       <div className="flex justify-center items-center flex-col my-5 self-start px-4 md:px-8 lg:px-10">
-        <h1 className="text-3xl font-bold mt-3">Skills</h1>
+        <h1 className="text-3xl font-bold mt-3">Tech Stack</h1>
       </div>
     </div>
   );
@@ -17,15 +17,15 @@ function Description() {
     <div className="mt-3 flex flex-col justify-start items-center w-full pl-10 md:pl-32 ">
       <div className="flex justify-center items-center flex-col self-start px-4 md:px-8 lg:px-10">
         <p className="text-lg text-neutral-600">
-          A showcase of my skills and expertise in various technologies and
-          programming languages.
+          A showcase of my tech stack, tools, and the technologies I use to
+          build efficient and modern web applications.
         </p>
       </div>
     </div>
   );
 }
 
-const Skill = () => {
+const Techstack = () => {
   return (
     <>
       <Title />
@@ -38,7 +38,7 @@ const Skill = () => {
           className="flex justify-center md:items-start items-center flex-col mb-5"
         >
           <Image
-            src="https://skillicons.dev/icons?i=bootstrap,cpp,debian,express,figma,github,git,html,css,js,netlify,nextjs,nodejs,react,supabase,ubuntu,vercel,vscode,vite,wordpress&theme=light&perline=8"
+            src="https://skillicons.dev/icons?i=cpp,js,html,css,bootstrap,tailwindcss,express,nextjs,nodejs,react,vite,figma,github,git,netlify,vercel,vscode,wordpress,supabase,ubuntu,debian&theme=light&perline=8"
             alt="My Skills"
             className="relative w-[98%] h-[98%] md:w-full md:h-full max-w-3xl py-10"
             width={800}
@@ -62,7 +62,7 @@ const Skill = () => {
             type: "spring",
           }}
         >
-          <h2 className="text-2xl md:text-4xl font-bold tracking-wider mb-3">
+          <h2 className="text-xl md:text-2xl font-bold tracking-wider mb-3">
             Tech Stack
           </h2>
           <p className="text-gray-600 text-justify title text-lg md:text-xl">
@@ -78,4 +78,4 @@ const Skill = () => {
   );
 };
 
-export default Skill;
+export default Techstack;
