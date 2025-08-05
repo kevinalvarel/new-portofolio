@@ -90,12 +90,13 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold ">
-        The Ultimate <br /> development studio
+        My Project, <br />
+        <span className="text-gray-800">My Learning Space</span>
       </h1>
-      <p className="max-w-2xl md:text-xl mt-8 text-gray-600">
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
+      <p className="max-w-2xl text-base md:text-xl mt-8 text-gray-600">
+        This page is a collection of things I&apos;ve built not just to ship
+        features, but to explore, learn, and understand the craft of development
+        better.
       </p>
     </div>
   );

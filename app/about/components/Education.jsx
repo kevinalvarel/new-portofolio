@@ -110,8 +110,8 @@ export default function Education() {
               </div>
               <div className="flex items-center gap-2">
                 <p className="text-gray-600 text-justify title text-lg">
-                  Aspiring to become a professional Software Engineer, I’m
-                  currently pursuing my Bachelor’s degree in{" "}
+                  Aspiring to become a professional Software Engineer, I&apos;m
+                  currently pursuing my Bachelor&apos;s degree in{" "}
                   <span className="text-black font-medium">
                     Computer Science
                   </span>{" "}
@@ -119,7 +119,7 @@ export default function Education() {
                   <span className="text-black font-medium">
                     Universitas Al-Khairiyah
                   </span>
-                  . My journey in tech is driven by curiosity and creativity—
+                  . My journey in tech is driven by curiosity and creativity
                   combining web development with cutting-edge AI research and
                   implementation.
                   <br />
@@ -132,8 +132,8 @@ export default function Education() {
                   <span className="text-black font-medium">
                     Artificial Intelligence
                   </span>
-                  . Constantly learning, building, and collaborating—I’m excited
-                  to keep growing and contributing to the evolving tech
+                  . Constantly learning, building, and collaborating I&apos;m
+                  excited to keep growing and contributing to the evolving tech
                   landscape.
                 </p>
               </div>
