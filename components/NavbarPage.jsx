@@ -11,7 +11,7 @@ import {
 } from "@/components/resizeable-navbar";
 import { useState } from "react";
 
-export function Header() {
+export function NavbarPage() {
   const navItems = [
     {
       name: "Home",

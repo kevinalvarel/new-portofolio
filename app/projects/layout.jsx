@@ -1,5 +1,7 @@
 import { Poppins, Jost } from "next/font/google";
 import "../globals.css";
+import { Header } from "../(root)/components/Header";
+import { NavbarPage } from "@/components/NavbarPage";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -14,7 +16,7 @@ const jost = Jost({
 });
 
 export const metadata = {
-  title: "Kevin Alvarel | Portofolio",
+  title: "Kevin Alvarel | Project",
   description: "Portofolio Muhammad Kevin Alvarel",
 };
 
@@ -22,6 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${jost.variable} antialiased`}>
+        <NavbarPage />
         {children}
       </body>
     </html>
