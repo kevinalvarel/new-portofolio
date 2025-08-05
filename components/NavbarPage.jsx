@@ -23,7 +23,7 @@ export function NavbarPage() {
     },
     {
       name: "Project",
-      link: "/projets",
+      link: "/projects",
     },
   ];
 
