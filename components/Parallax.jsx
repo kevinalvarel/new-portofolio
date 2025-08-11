@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const HeroParallax = ({ products }) => {
   const firstRow = products.slice(0, 5);
-  const secondRow = products.slice(5, 9);
+  const secondRow = products.slice(5, 10);
   const thirdRow = products.slice(10, 15);
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
@@ -89,18 +89,15 @@ export const HeroParallax = ({ products }) => {
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-10 md:px-8 w-full  left-0 top-0">
-      <h1 className=" md:text-7xl text-4xl font-bold ">
-        My{" "}
-        <span className="text-gray-900 font-extrabold underline md:text-7xl text-4xl">
-          Project
-        </span>
-        <br />
-        Space
+      <h1 className="md:bg-white bg-transparent lg:bg-transparent bg-opacity-50 md-px-0 text-black text-5xl md:text-8xl font-bold">
+        Project Space
       </h1>
-      <p className="max-w-2xl text-xl md:base-xl mt-8 text-gray-600">
-        This page is a collection of things I&apos;ve built not just to ship
-        features, but to explore, learn, and understand the craft of development
-        better.
+      <p className="title  text-xl mt-4 tracking-wider text-gray-900 leading-[1.7rem] mb-5">
+        List of my projects that I have done and{" "}
+        <span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
+          {" "}
+          still on progress
+        </span>
       </p>
     </div>
   );
@@ -116,7 +113,7 @@ export const ProductCard = ({ product, translate }) => {
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative shrink-0"
+      className="group/product aspect-video w-[30rem] relative shrink-0"
     >
       <a href={product.link} className="block group-hover/product:shadow-2xl ">
         <Image

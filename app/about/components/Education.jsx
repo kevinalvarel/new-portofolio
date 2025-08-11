@@ -4,7 +4,7 @@ import { useState } from "react";
 import Me4 from "@/public/images/ver.jpg";
 import Me5 from "@/public/images/ver.jpg";
 import Me6 from "@/public/images/ver.jpg";
-import { IconCertificate } from "@tabler/icons-react";
+import { IconCertificate, IconIdBadge } from "@tabler/icons-react";
 
 function Wrapper({ children }) {
   return (
@@ -31,6 +31,20 @@ export default function Education() {
 
   const certificationByYear = {
     2025: [
+      {
+        icon: <IconIdBadge />,
+        title: "Google Cloud Skill Badge",
+        subtitle: "Manage Data Models in Looker",
+        date: "2025",
+        color: "from-sky-400 to-blue-500",
+      },
+      {
+        icon: <IconIdBadge />,
+        title: "IBM SkillsBuild Badge",
+        subtitle: "Code Generation and Optimization Using IBM Granite",
+        date: "2025",
+        color: "from-sky-400 to-blue-500",
+      },
       {
         icon: <IconCertificate />,
         title: "Dicoding Certification",
@@ -93,7 +107,7 @@ export default function Education() {
                 S1 Teknik Informatika | Computer Science
               </h3>
               <div className="gap-4 mb-4 flex items-stretch md:h-[300px] xl:h-[400px]">
-                {[Me5, Me4, Me6].map((src, index) => (
+                {[Me5, Me4].map((src, index) => (
                   <div
                     key={index}
                     className="flex-[1] transition-all duration-300 ease-in-out hover:flex-[3] group"
@@ -110,7 +124,7 @@ export default function Education() {
               </div>
               <div className="flex items-center gap-2">
                 <p className="text-gray-600 text-justify title text-lg">
-                  Aspiring to become a professional Software Engineer, I&apos;m
+                  Aspiring to become a professional Web Developer, I&apos;m
                   currently pursuing my Bachelor&apos;s degree in{" "}
                   <span className="text-black font-medium">
                     Computer Science
@@ -120,7 +134,7 @@ export default function Education() {
                     Universitas Al-Khairiyah
                   </span>
                   . My journey in tech is driven by curiosity and creativity
-                  combining web development with cutting-edge AI research and
+                  combining web development with cutting edge AI research and
                   implementation.
                   <br />
                   <br />I am passionate about solving real-world problems
@@ -154,7 +168,7 @@ export default function Education() {
           >
             <h2 className="font-semibold text-xl mt-7">Certification</h2>
             <p className="text-md font-normal mb-3 md:mb-6">
-              Some of my certification during my study.
+              Some of my certification and Badge during my study.
             </p>
 
             <div className="relative">
