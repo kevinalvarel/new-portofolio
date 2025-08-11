@@ -51,7 +51,7 @@ const About = () => {
             }}
           >
             Beyond front-end work, Im currently expanding into Machine Learning
-            to combine data-driven insights with user-centric design — aiming to
+            to combine data driven insights with user-centric design aiming to
             create smarter, more personalized applications that adapt to user
             needs.
           </motion.p>

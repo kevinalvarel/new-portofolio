@@ -3,9 +3,9 @@ import { HeroProject } from "./components/Hero";
 
 const Page = () => {
   return (
-    <div>
+    <>
       <HeroProject />
-    </div>
+    </>
   );
 };
 
