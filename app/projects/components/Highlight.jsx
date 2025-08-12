@@ -2,9 +2,8 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 
-import Intervyou1 from "@/public/images/Kopi1.png";
-import Intervyou2 from "@/public/images/Kopi1.png";
-import Intervyou3 from "@/public/images/Kopi1.png";
+import Resumize1 from "@/public/images/Resumize1.png";
+import Resumize2 from "@/public/images/Resumize2.png";
 
 export default function Highlight() {
   return (
@@ -22,8 +21,8 @@ export default function Highlight() {
               className="w-full h-full shadow-lg"
             >
               <Image
-                src={Intervyou1}
-                alt="Alvalens"
+                src={Resumize1}
+                alt="Resumize Project"
                 layout="fill"
                 objectFit="cover"
                 placeholder="blur"
@@ -31,7 +30,7 @@ export default function Highlight() {
               />
             </motion.div>
           </div>
-          <div className="absolute top-10 right-28 h-[30%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
+          <div className="absolute top-8 right-28 h-[30%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
             <motion.div
               initial={{
                 opacity: 0,
@@ -47,38 +46,12 @@ export default function Highlight() {
               className="w-full h-full shadow-lg "
             >
               <Image
-                src={Intervyou3}
-                alt="Alvalens"
+                src={Resumize2}
+                alt="Resumize Project"
                 layout="fill"
                 objectFit="cover"
                 placeholder="blur"
                 objectPosition="0% 0%"
-              />
-            </motion.div>
-          </div>
-          <div className="absolute bottom-10 md:bottom-26 right-20 h-[35%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
-            <motion.div
-              initial={{
-                opacity: 0,
-                scale: 0.5,
-                x: -100,
-              }}
-              whileInView={{
-                opacity: 1,
-                scale: 1,
-                x: 0,
-              }}
-              transition={{
-                delay: 0.5,
-              }}
-              className="w-full h-full shadow-lg"
-            >
-              <Image
-                src={Intervyou2}
-                alt="Alvalens"
-                layout="fill"
-                objectFit="cover"
-                placeholder="blur"
               />
             </motion.div>
           </div>
@@ -99,15 +72,15 @@ export default function Highlight() {
           type: "spring",
         }}
       >
-        <h2 className="text-2xl font-bold tracking-wider mb-3">Intervyou AI</h2>
+        <h2 className="text-2xl font-bold tracking-wider mb-3">Resumize AI</h2>
         <p className="text-gray-600 text-justify title text-lg">
-          AI Based interview Preparation Website created to help fresh graduates
-          and job seekers prepare for interviews and optimize their CV through
-          AI-powered features. The website is built using Next.js, TypeScript,
-          Tailwind CSS, Shadcn UI, Prisma, and MySQL (TiDB). This website can
-          comprehensively analyze the user&apos;s interview performance by
-          providing a analysis of the user&apos;s answer, gesture, and material
-          recommendation to improve the user&apos;s interview skills.
+          Resumize AI is an AI-powered project designed to help users improve
+          the quality of their resumes or CVs. Built with Next.js, TypeScript,
+          Tailwind CSS, shadcn/ui, and PuterJS, the application allows users to
+          upload or fill in their resume details directly on the platform. The
+          AI system analyzes the content of the resume, providing a score based
+          on factors such as structure, grammar, readability, and relevance to
+          the desired job position.
         </p>{" "}
       </motion.div>
     </div>
