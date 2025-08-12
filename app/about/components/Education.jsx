@@ -85,81 +85,13 @@ export default function Education() {
           <h1 className="text-3xl md:text-4xl font-bold tracking-tighter">
             Education
           </h1>
-          <p className="text-muted-foreground max-w-[800px] mx-auto">
+          <p className="text-neutral-600 max-w-[800px] mx-auto">
             Get to know more about my educational background.
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Education Left */}
-          <motion.div
-            className="px-5"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <div className="font-medium text-lg mb-4">2024 - Present</div>
-            <div>
-              <h2 className="font-semibold text-xl">
-                Universitas Al-Khairiyah
-              </h2>
-              <h3 className="text-md font-normal mb-3">
-                S1 Teknik Informatika | Computer Science
-              </h3>
-              <div className="gap-4 mb-4 flex items-stretch md:h-[300px] xl:h-[400px]">
-                {[Me5, Me4].map((src, index) => (
-                  <div
-                    key={index}
-                    className="flex-[1] transition-all duration-300 ease-in-out hover:flex-[3] group"
-                  >
-                    <Image
-                      src={src}
-                      width={400}
-                      height={225}
-                      alt="University"
-                      className="rounded-lg w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300 ease-in-out"
-                    />
-                  </div>
-                ))}
-              </div>
-              <div className="flex items-center gap-2">
-                <p className="text-gray-600 text-justify title text-lg">
-                  Aspiring to become a professional Web Developer, I&apos;m
-                  currently pursuing my Bachelor&apos;s degree in{" "}
-                  <span className="text-black font-medium">
-                    Computer Science
-                  </span>{" "}
-                  at{" "}
-                  <span className="text-black font-medium">
-                    Universitas Al-Khairiyah
-                  </span>
-                  . My journey in tech is driven by curiosity and creativity
-                  combining web development with cutting edge AI research and
-                  implementation.
-                  <br />
-                  <br />I am passionate about solving real-world problems
-                  through code, especially at the intersection of{" "}
-                  <span className="text-black font-medium">
-                    Web Development
-                  </span>{" "}
-                  and{" "}
-                  <span className="text-black font-medium">
-                    Artificial Intelligence
-                  </span>
-                  . Constantly learning, building, and collaborating I&apos;m
-                  excited to keep growing and contributing to the evolving tech
-                  landscape.
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-2 mt-4 text-sm">
-                <div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-                  GPA: 3.9 out of 4
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Achievements Right */}
+          {/* Achievements Left */}
           <motion.div
             className="flex flex-col justify-start px-5 md:px-0"
             initial={{ opacity: 0, x: 50 }}
@@ -245,6 +177,73 @@ export default function Education() {
                   </button>
                 </motion.div>
               )}
+            </div>
+          </motion.div>
+          {/* Education Left */}
+          <motion.div
+            className="px-5"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <div className="font-medium text-lg mb-4">2024 - 2028</div>
+            <div>
+              <h2 className="font-semibold text-xl">
+                Universitas Al-Khairiyah
+              </h2>
+              <h3 className="text-md font-normal mb-3">
+                S1 Teknik Informatika | Computer Science
+              </h3>
+              <div className="gap-4 mb-4 flex items-stretch md:h-[300px] xl:h-[400px]">
+                {[Me5, Me4].map((src, index) => (
+                  <div
+                    key={index}
+                    className="flex-[1] transition-all duration-300 ease-in-out hover:flex-[3] group"
+                  >
+                    <Image
+                      src={src}
+                      width={400}
+                      height={225}
+                      alt="University"
+                      className="rounded-lg w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300 ease-in-out"
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="flex items-center gap-2">
+                <p className="text-gray-600 text-justify title text-lg">
+                  Aspiring to become a professional Web Developer, I&apos;m
+                  currently pursuing my Bachelor&apos;s degree in{" "}
+                  <span className="text-black font-medium">
+                    Computer Science
+                  </span>{" "}
+                  at{" "}
+                  <span className="text-black font-medium">
+                    Universitas Al-Khairiyah
+                  </span>
+                  . My journey in tech is driven by curiosity and creativity
+                  combining web development with cutting edge AI research and
+                  implementation.
+                  <br />
+                  <br />I am passionate about solving real-world problems
+                  through code, especially at the intersection of{" "}
+                  <span className="text-black font-medium">
+                    Web Development
+                  </span>{" "}
+                  and{" "}
+                  <span className="text-black font-medium">
+                    Artificial Intelligence
+                  </span>
+                  . Constantly learning, building, and collaborating I&apos;m
+                  excited to keep growing and contributing to the evolving tech
+                  landscape.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 mt-4 text-sm justify-end">
+                <div className="bg-neutral-300 text-black px-2 py-1 rounded-2xl">
+                  GPA: 3.9
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
