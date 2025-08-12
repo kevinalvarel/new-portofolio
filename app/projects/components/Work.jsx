@@ -8,14 +8,35 @@ import { IconBrandReact } from "@tabler/icons-react";
 export function Work() {
   return (
     <>
-      <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-whitew-full gap-4 mx-auto px-8">
+      <motion.div
+        className="mt-10 flex flex-col justify-start items-center w-full pl-10 md:pl-32"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4 }}
+      >
+        <div className="flex justify-center items-center flex-col my-5 self-start ">
+          <h1 className="text-3xl font-bold mt-3">What i do?</h1>
+        </div>
+      </motion.div>
+      <motion.div
+        className="py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-3 mx-auto px-8"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
         <Card
-          title="I build responsive and modern websites"
+          title="I built responsive web applications"
           icon={<IconBrandReact />}
         >
           <CanvasRevealEffect
-            animationSpeed={5.1}
-            containerClassName="bg-emerald-900"
+            animationSpeed={4}
+            containerClassName="bg-white"
+            colors={[
+              [16, 185, 129], // emerald-500
+              [52, 211, 153], // emerald-400
+            ]}
+            dotSize={2}
+            showGradient={false}
           />
         </Card>
         <Card
@@ -23,28 +44,29 @@ export function Work() {
           icon={<IconBrandReact />}
         >
           <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-black"
+            animationSpeed={4}
+            containerClassName="bg-white"
             colors={[
-              [236, 72, 153],
-              [232, 121, 249],
+              [236, 72, 153], // fuchsia-500
+              [232, 121, 249], // fuchsia-400
+            ]}
+            dotSize={2.5}
+            showGradient={false}
+          />
+        </Card>
+        <Card title="For me UX is my priority" icon={<IconBrandReact />}>
+          <CanvasRevealEffect
+            animationSpeed={4}
+            containerClassName="bg-white"
+            colors={[
+              [56, 189, 248], // sky-400
+              [125, 211, 252], // sky-300
             ]}
             dotSize={2}
-          />
-          {/* Radial gradient for the cute fade */}
-          <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-neutral-800" />
-        </Card>
-        <Card
-          title="I design with user experience in mind"
-          icon={<IconBrandReact />}
-        >
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-sky-600"
-            colors={[[125, 211, 252]]}
+            showGradient={false}
           />
         </Card>
-      </div>
+      </motion.div>
     </>
   );
 }
@@ -55,12 +77,12 @@ const Card = ({ title, icon, children }) => {
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border group/canvas-card flex items-center justify-center border-black/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[30rem] "
+      className="border group/canvas-card flex items-center justify-center border-neutral-200 bg-white rounded-xl max-w-sm w-full mx-auto p-4 relative h-[30rem] shadow-sm"
     >
-      <Icon className="absolute h-6 w-6 -top-3 -left-3 text-black" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-black" />
-      <Icon className="absolute h-6 w-6 -top-3 -right-3 text-black" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -right-3 text-black" />
+      <Icon className="absolute h-6 w-6 -top-3 -left-3 text-neutral-300" />
+      <Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-neutral-300" />
+      <Icon className="absolute h-6 w-6 -top-3 -right-3 text-neutral-300" />
+      <Icon className="absolute h-6 w-6 -bottom-3 -right-3 text-neutral-300" />
       <AnimatePresence>
         {hovered && (
           <motion.div
@@ -76,7 +98,7 @@ const Card = ({ title, icon, children }) => {
         <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
           {icon}
         </div>
-        <h2 className="text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+        <h2 className="text-neutral-900 text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 mt-4 font-bold group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
         </h2>
       </div>

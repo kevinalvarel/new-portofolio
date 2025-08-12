@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 
 import Me1 from "@/public/images/Kev1.jpg";
 import Me2 from "@/public/images/Kev2.jpg";
+import Me3 from "@/public/images/Kev3.jpg";
 import Image from "next/image";
 
 function Title() {
@@ -57,7 +58,7 @@ export default function Intro() {
                 className="w-full h-full"
               >
                 <Image
-                  src={Me2}
+                  src={Me3}
                   alt="Kev"
                   layout="fill"
                   objectFit="cover"
@@ -84,7 +85,7 @@ export default function Intro() {
                 className="w-full h-full"
               >
                 <Image
-                  src={Me1}
+                  src={Me2}
                   alt="Kev"
                   layout="fill"
                   objectFit="cover"

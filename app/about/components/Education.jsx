@@ -1,9 +1,8 @@
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import Me4 from "@/public/images/ver.jpg";
-import Me5 from "@/public/images/ver.jpg";
-import Me6 from "@/public/images/ver.jpg";
+import Pic1 from "@/public/images/tools.jpg";
+import Pic2 from "@/public/images/code.jpg";
 import { IconCertificate, IconIdBadge } from "@tabler/icons-react";
 
 function Wrapper({ children }) {
@@ -194,8 +193,8 @@ export default function Education() {
               <h3 className="text-md font-normal mb-3">
                 S1 Teknik Informatika | Computer Science
               </h3>
-              <div className="gap-4 mb-4 flex items-stretch md:h-[300px] xl:h-[400px]">
-                {[Me5, Me4].map((src, index) => (
+              <div className="gap-4 mb-4 flex items-stretch md:h-[300px] xl:h-[500px]">
+                {[Pic2, Pic1].map((src, index) => (
                   <div
                     key={index}
                     className="flex-[1] transition-all duration-300 ease-in-out hover:flex-[3] group"
