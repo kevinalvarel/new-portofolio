@@ -2,8 +2,6 @@
 
 Proyek ini adalah website portofolio modern untuk menampilkan profil, keterampilan, dan daftar proyek. Dibangun dengan Next.js (App Router) dan Tailwind CSS, serta animasi halus menggunakan Motion (by Framer) untuk transisi halaman, reveal on scroll, dan micro-interactions. Beberapa komponen interaktif juga memanfaatkan Three.js melalui React Three Fiber.
 
-![Preview](./public/images/project.png)
-
 ## Fitur Utama
 
 - Animasi halus dengan Motion (by Framer):
@@ -33,12 +31,12 @@ public/          -> aset gambar & dokumen (cv.pdf, images, project, dll.)
 json/data.json   -> data statis untuk konten
 ```
 
-## Menjalankan Secara Lokal
+## Cara Menjalankan
 
 1. Instal dependensi
 
 ```bash
-npm install
+npm install -d
 ```
 
 2. Jalankan mode pengembangan
@@ -56,14 +54,14 @@ npm run build
 npm start
 ```
 
-## Skrip NPM
+## Perintah Node Package Manager
 
 - `dev` — menjalankan dev server (Turbopack)
 - `build` — build produksi Next.js
 - `start` — menjalankan server produksi
 - `lint` — menjalankan ESLint
 
-## Catatan Implementasi Animasi
+## Catatan Animasi
 
 - Motion (by Framer) digunakan untuk:
   - Variants (enter/exit), stagger children, viewport reveal.
