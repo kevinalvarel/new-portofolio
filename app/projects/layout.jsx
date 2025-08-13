@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${jost.variable} antialiased overflow-x-hidden`}
+        className={`${poppins.variable} ${jost.variable} antialiased overflow-x-hidden w-[100%]`}
       >
         <NavbarPage />
         {children}
