@@ -17,7 +17,13 @@ import Portoblog4 from "@/public/images/project/Portoblog/Portoblog4.png";
 import Portoblog5 from "@/public/images/project/Portoblog/Portoblog5.png";
 
 export function HeroProject() {
-  return <HeroParallax products={products} />;
+  return (
+    <>
+      <div className="overflow-x-hidden">
+        <HeroParallax products={products} />;
+      </div>
+    </>
+  );
 }
 export const products = [
   {

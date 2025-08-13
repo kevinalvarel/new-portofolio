@@ -16,7 +16,7 @@ const jost = Jost({
 });
 
 export const metadata = {
-  title: "Kevin Alvarel | Project",
+  title: "Kevin Alvarel | About",
   description: "Portofolio Muhammad Kevin Alvarel",
 };
 
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${jost.variable} antialiased overflow-x-hidden w-[100%]`}
+        className={`${poppins.variable} ${jost.variable} antialiased overflow-x-hidden md:overflow-x-clip`}
       >
         <NavbarPage />
         {children}

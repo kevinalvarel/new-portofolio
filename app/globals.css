@@ -53,3 +53,18 @@ p {
 @theme inline {
   --color-background: rgb(248, 248, 248);
 }
+
+a[title]:hover:after {
+  margin-left: -100px;
+  margin-top: -50px;
+  position: absolute;
+  content: attr(title);
+  padding: 0.5rem;
+  white-space: nowrap;
+  z-index: 1;
+  background-color: #333333;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 0.8rem;
+}

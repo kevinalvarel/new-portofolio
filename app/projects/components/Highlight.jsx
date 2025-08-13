@@ -8,12 +8,12 @@ import Resumize2 from "@/public/images/Resumize2.png";
 export default function Highlight() {
   return (
     <>
-      <div className="flex flex-col justify-start items-center w-full pl-10 md:pl-32">
+      <div className="flex flex-col justify-start items-center w-full pl-10 md:pl-32 overflow-x-hidden">
         <div className="flex justify-center items-center flex-col my-5 self-start ">
           <h1 className="text-3xl font-bold mt-3">On Progress</h1>
         </div>
       </div>
-      <div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
+      <div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10 overflow-x-hidden">
         <div className="flex justify-center items-start flex-col mb-5 ">
           <div className="images relative w-full  aspect-square">
             <div className="absolute top-28 left-10 h-[40%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150 z-10">
@@ -36,7 +36,7 @@ export default function Highlight() {
                 />
               </motion.div>
             </div>
-            <div className="absolute top-8 right-28 h-[30%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
+            <div className="absolute top-8 right-20 h-[30%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-150">
               <motion.div
                 initial={{
                   opacity: 0,
