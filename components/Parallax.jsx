@@ -36,13 +36,13 @@ export const HeroParallax = ({ products }) => {
     springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
+    useTransform(scrollYProgress, [0, 0.2], [-300, 200]),
     springConfig
   );
   return (
     <div
       ref={ref}
-      className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="min-h-[140vh] lg:h-[200vh] py-20 lg:py-28 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -54,7 +54,7 @@ export const HeroParallax = ({ products }) => {
         }}
         className=""
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-16 mb-12">
           {firstRow.map((product) => (
             <ProductCard
               product={product}
@@ -63,7 +63,7 @@ export const HeroParallax = ({ products }) => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row  mb-20 space-x-20 ">
+        <motion.div className="flex flex-row mb-12 space-x-16 ">
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -72,7 +72,7 @@ export const HeroParallax = ({ products }) => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-16">
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
@@ -88,7 +88,7 @@ export const HeroParallax = ({ products }) => {
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-10 md:px-8 w-full  left-0 top-0">
+    <div className="max-w-7xl relative mx-auto py-10 md:py-16 px-10 md:px-8 w-full  left-0 top-0">
       <h1 className="md:bg-white bg-transparent lg:bg-transparent bg-opacity-50 md-px-0 text-black text-5xl md:text-8xl font-bold">
         Project Space
       </h1>

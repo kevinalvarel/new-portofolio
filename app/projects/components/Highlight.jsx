@@ -8,7 +8,7 @@ import Resumize2 from "@/public/images/Resumize2.png";
 export default function Highlight() {
   return (
     <>
-      <div className="mt-10 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
+      <div className="flex flex-col justify-start items-center w-full pl-10 md:pl-32">
         <div className="flex justify-center items-center flex-col my-5 self-start ">
           <h1 className="text-3xl font-bold mt-3">On Progress</h1>
         </div>
