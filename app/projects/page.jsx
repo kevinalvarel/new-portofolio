@@ -10,6 +10,7 @@ const Page = () => {
       <HeroProject />
       <Highlight />
       <Work />
+      <Project />
     </>
   );
 };

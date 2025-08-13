@@ -16,7 +16,7 @@ export default function Project() {
   const projects = Projects.Projects.filter((item) => item.show === true);
 
   return (
-    <>
+    <main className="overflow-x-hidden">
       <div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
         <div className="flex justify-center items-center flex-col my-5 self-start">
           <motion.h1
@@ -79,6 +79,6 @@ export default function Project() {
           />
         ))}
       </div>
-    </>
+    </main>
   );
 }
