@@ -50,7 +50,7 @@ export function Work() {
               [236, 72, 153], // fuchsia-500
               [232, 121, 249], // fuchsia-400
             ]}
-            dotSize={2.5}
+            dotSize={2}
             showGradient={false}
           />
         </Card>

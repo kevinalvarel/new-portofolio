@@ -23,7 +23,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${jost.variable} antialiased`}>
+      <body
+        className={`${poppins.variable} ${jost.variable} antialiased overflow-x-clip`}
+      >
         <NavbarPage />
         {children}
         <Footer />
