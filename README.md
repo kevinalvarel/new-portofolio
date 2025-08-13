@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portofolio Pribadi — Next.js + Motion (Framer) + Tailwind CSS
 
-## Getting Started
+Proyek ini adalah website portofolio modern untuk menampilkan profil, keterampilan, dan daftar proyek. Dibangun dengan Next.js (App Router) dan Tailwind CSS, serta animasi halus menggunakan Motion (by Framer) untuk transisi halaman, reveal on scroll, dan micro-interactions. Beberapa komponen interaktif juga memanfaatkan Three.js melalui React Three Fiber.
 
-First, run the development server:
+![Preview](./public/images/project.png)
+
+## Fitur Utama
+
+- Animasi halus dengan Motion (by Framer):
+  - Transisi halaman, staggered reveal, hover/tap animation.
+- UI responsif dengan Tailwind CSS v4.
+- Struktur App Router Next.js: `/(root)`, `/about`, `/projects`.
+- Komponen interaktif (parallax, canvas/3D) dengan React Three Fiber dan Three.js.
+- Optimasi aset dan gambar bawaan Next.js.
+
+## Tech Stack
+
+- Next.js 15 (App Router), React 19
+- Tailwind CSS 4, @tailwindcss/postcss
+- Motion (by Framer) `motion@^12`
+- React Three Fiber + Three.js
+- GSAP (beberapa efek animasi tambahan)
+
+## Struktur Proyek (ringkas)
+
+```
+app/
+  (root)/        -> halaman beranda/hero, header, project highlight, contact
+  about/         -> profil singkat, timeline/journey, tech stack, education
+  projects/      -> daftar proyek, highlight, kartu proyek
+components/      -> komponen global (Navbar, Footer, Button, Canvas, dsb.)
+public/          -> aset gambar & dokumen (cv.pdf, images, project, dll.)
+json/data.json   -> data statis untuk konten
+```
+
+## Menjalankan Secara Lokal
+
+1. Instal dependensi
+
+```bash
+npm install
+```
+
+2. Jalankan mode pengembangan
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Akses http://localhost:3000
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Build untuk produksi
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Skrip NPM
 
-To learn more about Next.js, take a look at the following resources:
+- `dev` — menjalankan dev server (Turbopack)
+- `build` — build produksi Next.js
+- `start` — menjalankan server produksi
+- `lint` — menjalankan ESLint
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Catatan Implementasi Animasi
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Motion (by Framer) digunakan untuk:
+  - Variants (enter/exit), stagger children, viewport reveal.
+  - Micro-interactions (hover, tap) pada tombol/kartu proyek.
+- GSAP/Three.js dipakai pada elemen tertentu untuk efek parallax/3D.
 
-## Deploy on Vercel
+## Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Direkomendasikan deploy di Vercel:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Push kode ke repository Git Anda
+- Import proyek di Vercel dan deploy otomatis
+
+Dokumentasi: https://nextjs.org/docs/app dan https://motion.dev/
