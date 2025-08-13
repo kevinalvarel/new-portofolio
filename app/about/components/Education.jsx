@@ -1,8 +1,10 @@
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import Pic1 from "@/public/images/tools.jpg";
-import Pic2 from "@/public/images/code.jpg";
+
+import Pic1 from "@/public/images/about/Education/tools.jpg";
+import Pic2 from "@/public/images/about/Education/code.jpg";
+
 import { IconCertificate, IconIdBadge } from "@tabler/icons-react";
 
 function Wrapper({ children }) {

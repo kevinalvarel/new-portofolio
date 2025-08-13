@@ -1,0 +1,73 @@
+{
+  "Projects": [
+    {
+      "show": true,
+      "title": "Portoblog",
+      "desc": [
+        "Portoblog is a blogging platform that I created to showcase my writing and share my thoughts with the world. The platform is built using Next.js, Typescript, and Payload",
+        "The platform has a few features such as user authentication, blog post creation, blog post editing, blog post deletion, and blog post commenting. The platform also has a few other features such as user profile management and blog post search."
+      ],
+      "year": "2025",
+      "preview": "https://kevinalvarel-portofolio.vercel.app/",
+      "code": "",
+      "thumbnail": "/images/project/Portoblog/Portoblog1.png",
+      "images": [
+        "/images/project/Portoblog/Potroblog1.png",
+        "/images/project/Portoblog/Potroblog2.png",
+        "/images/project/Portoblog/Potroblog3.png",
+        "/images/project/Portoblog/Potroblog4.png",
+        "/images/project/Portoblog/Potroblog5.png"
+      ],
+      "tech": [
+        "NextJS",
+        "Typescript",
+        "Payload",
+        "Tailwind CSS",
+        "AceternityUI"
+      ],
+      "slug": "portoblog",
+      "category": [2]
+    },
+    {
+      "show": true,
+      "title": "Ecommerce Static Landing Page",
+      "desc": [
+        "Ecommerce Static Landing Page is a project that I created to showcase my skills in building landing pages. The project is built using Next.js, Typescript, and Tailwind CSS.",
+        "The project has a few animations and transitions to make the landing page more interactive."
+      ],
+      "year": "2025",
+      "preview": "https://kevinalvarel-portofolio.vercel.app/",
+      "code": "",
+      "thumbnail": "/images/project/Ecommerce/ecommerce1.png",
+      "images": [
+        "/images/project/Ecommerce/ecommerce1.png",
+        "/images/project/Ecommerce/ecommerce2.png",
+        "/images/project/Ecommerce/ecommerce3.png",
+        "/images/project/Ecommerce/ecommerce4.png"
+      ],
+      "tech": ["ViteJS", "JavaScript", "Tailwind CSS", "Framer Motion"],
+      "slug": "ecommerce-static-landing-page",
+      "category": [1]
+    },
+    {
+      "show": true,
+      "title": "Coffeeshop Static Landing Page",
+      "desc": [
+        "Coffeeshop Static Landing Page is a project that I created to showcase my skills in building landing pages. The project is built using Next.js, Typescript, Framer Motion, and Tailwind CSS.",
+        "The project has a few animations and transitions to make the landing page more interactive."
+      ],
+      "year": "2025",
+      "preview": "https://kevinalvarel-portofolio.vercel.app/",
+      "code": "",
+      "thumbnail": "/images/project/Coffeeshop/Kopi1.png",
+      "images": [
+        "/images/project/Coffeeshop/Kopi1.png",
+        "/images/project/Coffeeshop/Kopi2.png",
+        "/images/project/Coffeeshop/Kopi3.png"
+      ],
+      "tech": ["ViteJS", "JavaScript", "Tailwind CSS", "Framer Motion"],
+      "slug": "ecommerce-static-landing-page",
+      "category": [1]
+    }
+  ]
+}

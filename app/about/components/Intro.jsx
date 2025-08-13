@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
 
-import Me1 from "@/public/images/Kev1.jpg";
-import Me2 from "@/public/images/Kev2.jpg";
-import Me3 from "@/public/images/Kev3.jpg";
+import Me1 from "@/public/images/about/Me/Kev1.jpg";
+import Me2 from "@/public/images/about/Me/Kev2.jpg";
+import Me3 from "@/public/images/about/Me/Kev3.jpg";
 import Image from "next/image";
 
 function Title() {

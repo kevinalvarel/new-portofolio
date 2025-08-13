@@ -4,20 +4,20 @@ import { motion } from "motion/react";
 
 import { Timeline } from "@/components/Timeline";
 
-import Porto1 from "@/public/images/porto1.png";
-import Porto2 from "@/public/images/porto2.png";
-import Porto3 from "@/public/images/porto3.png";
-import Porto4 from "@/public/images/porto4.png";
+import Porto1 from "@/public/images/about/Journey/porto1.png";
+import Porto2 from "@/public/images/about/Journey/porto2.png";
+import Porto3 from "@/public/images/about/Journey/porto3.png";
+import Porto4 from "@/public/images/about/Journey/porto4.png";
 
-import ecommerce1 from "@/public/images/ecommerce1.png";
-import ecommerce2 from "@/public/images/ecommerce2.png";
-import ecommerce3 from "@/public/images/ecommerce3.png";
-import ecommerce4 from "@/public/images/ecommerce4.png";
+import ecommerce1 from "@/public/images/about/Journey/ecommerce1.png";
+import ecommerce2 from "@/public/images/about/Journey/ecommerce2.png";
+import ecommerce3 from "@/public/images/about/Journey/ecommerce3.png";
+import ecommerce4 from "@/public/images/about/Journey/ecommerce4.png";
 
-import project1 from "@/public/images/project1.png";
-import project2 from "@/public/images/project2.png";
-import project3 from "@/public/images/project3.png";
-import project4 from "@/public/images/project4.png";
+import project1 from "@/public/images/about/Journey/project1.png";
+import project2 from "@/public/images/about/Journey/project2.png";
+import project3 from "@/public/images/about/Journey/project3.png";
+import project4 from "@/public/images/about/Journey/project4.png";
 
 export function TimelineAbout() {
   const data = [

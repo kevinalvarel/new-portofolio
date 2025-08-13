@@ -1,20 +1,20 @@
 "use client";
 import { HeroParallax } from "@/components/Parallax";
 
-import Ecommerce1 from "@/public/images/ecommerce1.png";
-import Ecommerce2 from "@/public/images/ecommerce2.png";
-import Ecommerce3 from "@/public/images/ecommerce3.png";
-import Ecommerce4 from "@/public/images/ecommerce4.png";
+import Ecommerce1 from "@/public/images/project/Ecommerce/ecommerce1.png";
+import Ecommerce2 from "@/public/images/project/Ecommerce/ecommerce2.png";
+import Ecommerce3 from "@/public/images/project/Ecommerce/ecommerce3.png";
+import Ecommerce4 from "@/public/images/project/Ecommerce/ecommerce4.png";
 
-import Coffeshop1 from "@/public/images/Kopi1.png";
-import Coffeshop2 from "@/public/images/Kopi2.png";
-import Coffeshop3 from "@/public/images/Kopi3.png";
+import Coffeshop1 from "@/public/images/project/Coffeeshop/Kopi1.png";
+import Coffeshop2 from "@/public/images/project/Coffeeshop/Kopi2.png";
+import Coffeshop3 from "@/public/images/project/Coffeeshop/Kopi3.png";
 
-import Portoblog1 from "@/public/images/Portoblog1.png";
-import Portoblog2 from "@/public/images/Portoblog2.png";
-import Portoblog3 from "@/public/images/Portoblog3.png";
-import Portoblog4 from "@/public/images/Portoblog4.png";
-import Portoblog5 from "@/public/images/Portoblog5.png";
+import Portoblog1 from "@/public/images/project/Portoblog/Portoblog1.png";
+import Portoblog2 from "@/public/images/project/Portoblog/Portoblog2.png";
+import Portoblog3 from "@/public/images/project/Portoblog/Portoblog3.png";
+import Portoblog4 from "@/public/images/project/Portoblog/Portoblog4.png";
+import Portoblog5 from "@/public/images/project/Portoblog/Portoblog5.png";
 
 export function HeroProject() {
   return <HeroParallax products={products} />;
