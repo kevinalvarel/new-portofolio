@@ -1,78 +1,63 @@
-# Portofolio Pribadi — Next.js + Motion (Framer) + Tailwind CSS
+# Personal Portfolio — Next.js + Motion (Framer) + Tailwind CSS
 
-Proyek ini adalah website portofolio modern untuk menampilkan profil, keterampilan, dan daftar proyek. Dibangun dengan Next.js (App Router) dan Tailwind CSS, serta animasi halus menggunakan Motion (by Framer) untuk transisi halaman, reveal on scroll, dan micro-interactions. Beberapa komponen interaktif juga memanfaatkan Three.js melalui React Three Fiber.
+A modern, performant personal portfolio to showcase profile, skills, and projects. Built with Next.js (App Router) and Tailwind CSS, featuring smooth, production‑ready animations powered by Motion (by Framer). The project also includes interactive visuals with React Three Fiber/Three.js
 
-## Fitur Utama
-
-- Animasi halus dengan Motion (by Framer):
-  - Transisi halaman, staggered reveal, hover/tap animation.
-- UI responsif dengan Tailwind CSS v4.
-- Struktur App Router Next.js: `/(root)`, `/about`, `/projects`.
-- Komponen interaktif (parallax, canvas/3D) dengan React Three Fiber dan Three.js.
-- Optimasi aset dan gambar bawaan Next.js.
-
-## Tech Stack
+## Technologies Used
 
 - Next.js 15 (App Router), React 19
 - Tailwind CSS 4, @tailwindcss/postcss
-- Motion (by Framer) `motion@^12`
-- React Three Fiber + Three.js
-- GSAP (beberapa efek animasi tambahan)
+- Motion (by Framer) ^12 (page transitions, viewport reveals, micro‑interactions)
+- React Three Fiber ^9 + Three.js (3D/Canvas experiments)
+- ESLint 9, Turbopack dev server
+- Icons: react-icons, @tabler/icons-react, Font Awesome
 
-## Struktur Proyek (ringkas)
+## Features
 
-```
-app/
-  (root)/        -> halaman beranda/hero, header, project highlight, contact
-  about/         -> profil singkat, timeline/journey, tech stack, education
-  projects/      -> daftar proyek, highlight, kartu proyek
-components/      -> komponen global (Navbar, Footer, Button, Canvas, dsb.)
-public/          -> aset gambar & dokumen (cv.pdf, images, project, dll.)
-json/data.json   -> data statis untuk konten
-```
+- Smooth page transitions and staggered reveal on scroll with Motion (by Framer)
+- Responsive UI with Tailwind CSS v4
+- App Router structure with dedicated routes: home, about, and projects
+- Reusable UI components (Navbar, Footer, Button, Timeline, Parallax, Canvas)
+- Image and asset optimization via Next.js
+- Optional 3D/Canvas sections (Three.js via React Three Fiber)
+- Clean codebase with ESLint and utility helpers
 
-## Cara Menjalankan
+## Setup Instructions
 
-1. Instal dependensi
+Prerequisites: Node.js 18+ recommended.
 
-```bash
-npm install -d
-```
+1. Install dependencies
 
-2. Jalankan mode pengembangan
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-```
+2. Start the development server
 
-Akses http://localhost:3000
+   ```bash
+   npm run dev
+   ```
 
-3. Build untuk produksi
+   Open http://localhost:3000
 
-```bash
-npm run build
-npm start
-```
+3. Build and run in production
 
-## Perintah Node Package Manager
+   ```bash
+   npm run build
+   npm start
+   ```
 
-- `dev` — menjalankan dev server (Turbopack)
-- `build` — build produksi Next.js
-- `start` — menjalankan server produksi
-- `lint` — menjalankan ESLint
+4. Lint
 
-## Catatan Animasi
+   ```bash
+   npm run lint
+   ```
 
-- Motion (by Framer) digunakan untuk:
-  - Variants (enter/exit), stagger children, viewport reveal.
-  - Micro-interactions (hover, tap) pada tombol/kartu proyek.
-- GSAP/Three.js dipakai pada elemen tertentu untuk efek parallax/3D.
+## AI Support Explanation
 
-## Deploy
-
-Direkomendasikan deploy di Vercel:
-
-- Push kode ke repository Git Anda
-- Import proyek di Vercel dan deploy otomatis
-
-Dokumentasi: https://nextjs.org/docs/app dan https://motion.dev/
+- This project does not rely on AI at runtime; it is a static/SSR portfolio application.
+- AI tools (e.g., GitHub Copilot, IBM Watson, ChatGPT, and Claude) were used to assist with documentation, refactors, and creating animation variants/snippets more quickly during development.
+- You can continue using AI assistance in your editor to:
+  - Generate or refine Motion variants and Tailwind utility patterns
+  - Draft content sections (About, Projects) and commit messages
+  - Suggest accessibility and performance improvements
+- No user data is sent to any AI service by the app itself. Any AI usage is developer‑side during coding/documentation.
