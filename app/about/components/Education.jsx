@@ -61,6 +61,22 @@ export default function Education() {
         color: "from-yellow-400 to-orange-500",
       },
     ],
+    2024: [
+      {
+        icon: <IconCertificate />,
+        title: "Google Cloud",
+        subtitle: "Classify Images with TensorFlow on Google Cloud",
+        date: "2024",
+        color: "from-sky-400 to-blue-500",
+      },
+      {
+        icon: <IconCertificate />,
+        title: "Google Cloud",
+        subtitle: "Build LookML Objects in Looker Skill Badge",
+        date: "2024",
+        color: "from-sky-400 to-blue-500",
+      },
+    ],
   };
 
   const allCertification = Object.entries(certificationByYear)
