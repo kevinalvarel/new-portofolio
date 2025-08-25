@@ -30,13 +30,38 @@
     },
     {
       "show": true,
+      "title": "MerdekAI - AI Chatbot",
+      "desc": [
+        "MerdekAI is an AI chatbot designed to provide users with accurate and relevant information about any topic they inquire about. The chatbot utilizes advanced natural language processing techniques to understand user queries and provide appropriate responses. Merdekai is capable of handling a wide range of topics, from general."
+      ],
+      "year": "2025",
+      "preview": "https://merdekai.my.id/",
+      "code": "",
+      "thumbnail": "/images/project/Merdekai/merdekai-2.png",
+      "images": [
+        "/images/project/Merdekai/merdekai-1.png",
+        "/images/project/Merdekai/merdekai-2.png",
+        "/images/project/Merdekai/merdekai-3.png"
+      ],
+      "tech": [
+        "NextJS",
+        "Typescript",
+        "Express",
+        "Better Auth",
+        "AceternityUI"
+      ],
+      "slug": "merdekai",
+      "category": [2]
+    },
+    {
+      "show": true,
       "title": "Ecommerce Static Landing Page",
       "desc": [
         "Ecommerce Static Landing Page is a project that I created to showcase my skills in building landing pages. The project is built using Next.js, Typescript, and Tailwind CSS.",
         "The project has a few animations and transitions to make the landing page more interactive."
       ],
       "year": "2025",
-      "preview": "https://kevinalvarel-portofolio.vercel.app/",
+      "preview": "https://epocaid.netlify.app/",
       "code": "",
       "thumbnail": "/images/project/Ecommerce/ecommerce1.png",
       "images": [
@@ -57,7 +82,7 @@
         "The project has a few animations and transitions to make the landing page more interactive."
       ],
       "year": "2025",
-      "preview": "https://kevinalvarel-portofolio.vercel.app/",
+      "preview": "https://neggvscoffee.netlify.app/",
       "code": "",
       "thumbnail": "/images/project/Coffeeshop/Kopi1.png",
       "images": [
@@ -66,7 +91,7 @@
         "/images/project/Coffeeshop/Kopi3.png"
       ],
       "tech": ["ViteJS", "JavaScript", "Tailwind CSS", "Framer Motion"],
-      "slug": "ecommerce-static-landing-page",
+      "slug": "coffeeshop-static-landing-page",
       "category": [1]
     }
   ]

@@ -16,7 +16,7 @@ const jost = Jost({
 });
 
 export const metadata = {
-  title: "Kevin Alvarel | About",
+  title: "Kevin Alvarel | Project",
   description: "Portofolio Muhammad Kevin Alvarel",
 };
 
