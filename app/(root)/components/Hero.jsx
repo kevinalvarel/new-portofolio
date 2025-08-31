@@ -50,7 +50,7 @@ const Hero = () => {
                 type: "spring",
               }}
             >
-              Front-End Developer
+              Jr Front-End Developer
             </motion.h1>
             <motion.p
               className="title text-md  2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
