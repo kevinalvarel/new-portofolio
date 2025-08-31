@@ -41,6 +41,21 @@ export default function Education() {
       },
       {
         icon: <IconIdBadge />,
+        title: "Google Cloud Badge",
+        subtitle: "Analyze Speech and Language with Google APIs Skill Badge",
+        date: "2025",
+        color: "from-sky-400 to-blue-500",
+      },
+      {
+        icon: <IconIdBadge />,
+        title: "Google Cloud Badge",
+        subtitle:
+          "Build Real World AI Applications with Gemini and Imagen Skill Badge",
+        date: "2025",
+        color: "from-sky-400 to-blue-500",
+      },
+      {
+        icon: <IconIdBadge />,
         title: "IBM SkillsBuild Badge",
         subtitle: "Code Generation and Optimization Using IBM Granite",
         date: "2025",
