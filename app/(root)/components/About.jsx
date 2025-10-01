@@ -39,7 +39,7 @@ const About = () => {
             I'm a passionate and detail-oriented Front-End Developer with a
             strong interest in clean code, modern UI design, and accessible web
             experiences. I enjoy turning ideas into intuitive and interactive
-            interfaces using technologies like React, Tailwind CSS, and Next.js.
+            interfaces using technologies like React, Node.js, and Express.js.
           </motion.p>
           <motion.p
             className="title text-md  2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"

@@ -5,6 +5,9 @@ import { useState } from "react";
 import Pic1 from "@/public/images/about/Education/tools.jpg";
 import Pic2 from "@/public/images/about/Education/code.jpg";
 
+import Pic3 from "@/public/images/about/Education/gsa1.jpg";
+import Pic4 from "@/public/images/about/Education/gsa2.jpg";
+
 import { IconCertificate, IconIdBadge } from "@tabler/icons-react";
 
 function Wrapper({ children }) {
@@ -271,10 +274,41 @@ export default function Education() {
                   landscape.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-2 mt-4 text-sm justify-end">
-                <div className="bg-neutral-300 text-black px-2 py-1 rounded-2xl">
+              <div className="flex flex-wrap gap-2 mt-4 text-sm justify-start">
+                <div className="bg-neutral-300 text-black px-2 py-1 rounded-2xl hover:bg-neutral-400 transition-all duration-300">
                   GPA: 3.9
                 </div>
+              </div>
+            </div>
+            <div className="mt-10">
+              <div className="text-right">
+                <h2 className="font-semibold text-xl">
+                  Google Student Ambassador
+                </h2>
+                <h3 className="text-md font-normal mb-3">2025 - Present</h3>
+              </div>
+              <div className="gap-4 mb-4 flex items-stretch md:h-[300px] xl:h-[500px]">
+                {[Pic3, Pic4].map((src, index) => (
+                  <div
+                    key={index}
+                    className="flex-[1] transition-all duration-300 ease-in-out hover:flex-[3] group"
+                  >
+                    <Image
+                      src={src}
+                      width={400}
+                      height={225}
+                      alt="University"
+                      className="rounded-lg w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300 ease-in-out"
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="flex items-center gap-2">
+                <p className="text-gray-600 text-justify title text-lg">
+                  As a Google Student Ambassador, I actively talk about Google
+                  technologies and initiatives on campus, fostering a community
+                  of innovation and collaboration among students.
+                </p>
               </div>
             </div>
           </motion.div>

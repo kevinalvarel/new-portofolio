@@ -50,7 +50,7 @@ const Hero = () => {
                 type: "spring",
               }}
             >
-              Jr Front-End Developer
+              Junior Fullstack Developer
             </motion.h1>
             <motion.p
               className="title text-md  2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
@@ -61,7 +61,7 @@ const Hero = () => {
                 type: "spring",
               }}
             >
-              Hi! I&rsquo;am Kevin, a Junior Front-End Developer passionate
+              Hi! I&rsquo;am Kevin, a Junior Fullstack Developer passionate
               about building sleek, responsive user interfaces and continuously
               learning modern web technologies.
             </motion.p>
