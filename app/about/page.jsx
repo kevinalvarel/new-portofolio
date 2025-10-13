@@ -5,7 +5,7 @@ import Intro from "./components/Intro";
 import Techstack from "./components/Techstack";
 import Education from "./components/Education";
 
-const page = () => {
+const Page = () => {
   return (
     <main className="overflow-hidden py-6 md:py-16 mx-auto">
       <Intro />
@@ -16,4 +16,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

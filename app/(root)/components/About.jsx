@@ -36,10 +36,11 @@ const About = () => {
               type: "spring",
             }}
           >
-            I'm a passionate and detail-oriented Front-End Developer with a
-            strong interest in clean code, modern UI design, and accessible web
-            experiences. I enjoy turning ideas into intuitive and interactive
-            interfaces using technologies like React, Node.js, and Express.js.
+            I'm a passionate and detail-oriented Web Developer with expertise in
+            full-stack development, clean code, and modern web technologies. I
+            enjoy building complete web solutions from front-end interfaces to
+            back-end systems using technologies like React, Node.js, and
+            Express.js.
           </motion.p>
           <motion.p
             className="title text-md  2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
@@ -50,10 +51,11 @@ const About = () => {
               type: "spring",
             }}
           >
-            Beyond front-end work, Im currently expanding into Machine Learning
-            to combine data driven insights with user-centric design aiming to
-            create smarter, more personalized applications that adapt to user
-            needs.
+            Beyond Web Developer, I'm currently expanding into Mobile
+            Development to create seamless cross-platform experiences. I'm
+            exploring React Native and native mobile technologies to build
+            responsive applications that deliver consistent user experiences
+            across web and mobile platforms.
           </motion.p>
         </motion.div>
         <motion.div
