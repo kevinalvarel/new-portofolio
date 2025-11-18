@@ -6,7 +6,6 @@ import { NotFound } from "next/error";
 
 import Image from "next/image";
 import BlurImage from "@/public/images/placeholder/blur.jpg";
-import FixedButon from "@/components/FixedButton";
 
 function ScrollDownButton() {
   const [isAtBottom, setIsAtBottom] = useState(false);

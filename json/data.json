@@ -12,11 +12,11 @@
       "code": "",
       "thumbnail": "/images/project/Portoblog/Portoblog1.png",
       "images": [
-        "/images/project/Portoblog/Potroblog1.png",
-        "/images/project/Portoblog/Potroblog2.png",
-        "/images/project/Portoblog/Potroblog3.png",
-        "/images/project/Portoblog/Potroblog4.png",
-        "/images/project/Portoblog/Potroblog5.png"
+        "/images/project/Portoblog/Portoblog1.png",
+        "/images/project/Portoblog/Portoblog2.png",
+        "/images/project/Portoblog/Portoblog3.png",
+        "/images/project/Portoblog/Portoblog4.png",
+        "/images/project/Portoblog/Portoblog5.png"
       ],
       "tech": [
         "NextJS",
@@ -93,6 +93,26 @@
       "tech": ["ViteJS", "JavaScript", "Tailwind CSS", "Framer Motion"],
       "slug": "coffeeshop-static-landing-page",
       "category": [1]
+    },
+    {
+      "show": true,
+      "title": "Dicoding Community Network",
+      "desc": [
+        "DCN Universitas Al-Khairiyah is a community network platform designed to learn and get certifications from Dicoding. This platform is built using Next.js",
+        "."
+      ],
+      "year": "2025",
+      "preview": "https://dcnunival.my.id/",
+      "code": "",
+      "thumbnail": "/images/project/DcnUnival/dcn1.png",
+      "images": [
+        "/images/project/DcnUnival/dcn1.png",
+        "/images/project/DcnUnival/dcn2.png",
+        "/images/project/DcnUnival/dcn3.png"
+      ],
+      "tech": ["NextJS", "JavaScript", "Tailwind CSS", "React"],
+      "slug": "dicoding-community-network",
+      "category": [9]
     }
   ]
 }
