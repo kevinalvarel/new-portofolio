@@ -10,24 +10,25 @@ import {
   MobileNavMenu,
 } from "@/components/resizeable-navbar";
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 export function Header() {
   const navItems = [
     {
       name: "Home",
-      link: "#home",
+      link: "home",
     },
     {
       name: "About",
-      link: "#about",
+      link: "about",
     },
     {
       name: "Project",
-      link: "#project",
+      link: "project",
     },
     {
       name: "Contact",
-      link: "#contact",
+      link: "contact",
     },
   ];
 
@@ -57,14 +58,16 @@ export function Header() {
             onClose={() => setIsMobileMenuOpen(false)}
           >
             {navItems.map((item, idx) => (
-              <a
+              <Link
                 key={`mobile-link-${idx}`}
-                href={item.link}
+                to={item.link}
+                smooth={true}
+                duration={500}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="relative text-neutral-600"
               >
                 <span className="block">{item.name}</span>
-              </a>
+              </Link>
             ))}
           </MobileNavMenu>
         </MobileNav>

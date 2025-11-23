@@ -9,7 +9,6 @@ import {
 } from "motion/react";
 
 import React, { useRef, useState } from "react";
-import { Link } from "react-scroll";
 
 export const Navbar = ({ children, className }) => {
   const ref = useRef(null);
@@ -84,14 +83,12 @@ export const NavItems = ({ items, className, onItemClick }) => {
       )}
     >
       {items.map((item, idx) => (
-        <Link
+        <a
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
           className="relative px-4 py-2 text-neutral-600"
           key={`link-${idx}`}
-          to={item.link}
-          smooth={true}
-          duration={500}
+          href={item.link}
         >
           {hovered === idx && (
             <motion.div
@@ -100,7 +97,7 @@ export const NavItems = ({ items, className, onItemClick }) => {
             />
           )}
           <span className="relative z-20">{item.name}</span>
-        </Link>
+        </a>
       ))}
     </motion.div>
   );

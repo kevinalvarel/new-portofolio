@@ -8,7 +8,7 @@ import {
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
-} from "@/components/resizeable-navbar";
+} from "@/components/resizeable-navbar-page";
 import { useState } from "react";
 
 export function NavbarPage() {
