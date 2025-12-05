@@ -87,7 +87,7 @@ export const NavItems = ({ items, className, onItemClick }) => {
         <Link
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-4 py-2 text-neutral-600"
+          className="relative px-4 py-2 text-neutral-600 cursor-pointer hover:text-neutral-800"
           key={`link-${idx}`}
           to={item.link}
           smooth={true}

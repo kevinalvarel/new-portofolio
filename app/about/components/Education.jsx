@@ -7,6 +7,7 @@ import Pic2 from "@/public/images/about/Education/code.jpg";
 
 import Pic3 from "@/public/images/about/Education/gsa1.jpg";
 import Pic4 from "@/public/images/about/Education/gsa2.jpg";
+import Pic5 from "@/public/images/about/Education/gsa3.jpg";
 
 import { IconCertificate, IconIdBadge } from "@tabler/icons-react";
 
@@ -288,10 +289,10 @@ export default function Education() {
                 <h3 className="text-md font-normal mb-3">2025 - Present</h3>
               </div>
               <div className="gap-4 mb-4 flex items-stretch md:h-[300px] xl:h-[500px]">
-                {[Pic3, Pic4].map((src, index) => (
+                {[Pic3, Pic5, Pic4].map((src, index) => (
                   <div
                     key={index}
-                    className="flex-[1] transition-all duration-300 ease-in-out hover:flex-[3] group"
+                    className="flex-[1] transition-all duration-300 ease-in-out hover:flex-[7] group"
                   >
                     <Image
                       src={src}

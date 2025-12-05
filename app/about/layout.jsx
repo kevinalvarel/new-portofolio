@@ -17,7 +17,8 @@ const jost = Jost({
 
 export const metadata = {
   title: "Kevin Alvarel | About",
-  description: "Portofolio Muhammad Kevin Alvarel",
+  description:
+    "Kevin is a software developer specializing in web development and design. Explore his projects, skills, and contact information.",
 };
 
 export default function RootLayout({ children }) {
