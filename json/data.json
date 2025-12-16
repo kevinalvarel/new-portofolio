@@ -113,6 +113,32 @@
       "tech": ["NextJS", "JavaScript", "Tailwind CSS", "React"],
       "slug": "dicoding-community-network",
       "category": [9]
+    },
+    {
+      "show": true,
+      "title": "Dipelajarin Code Editor",
+      "desc": [
+        "Dipelajarin Code Editor is a web-based code editor designed for educational purposes. It allows users to write, edit, and run code snippets in various programming languages.",
+        "The editor is built using Next.js and provides a user-friendly interface with syntax highlighting, code completion, and real-time collaboration features."
+      ],
+      "year": "2025",
+      "preview": "https://dipelajarin.vercel.app/",
+      "code": "",
+      "thumbnail": "/images/project/CodeEditor/Pelajarin1.png",
+      "images": [
+        "/images/project/CodeEditor/Pelajarin1.png",
+        "/images/project/CodeEditor/Pelajarin2.png",
+        "/images/project/CodeEditor/Pelajarin3.png"
+      ],
+      "tech": [
+        "NextJS",
+        "Typescript",
+        "Drizzle",
+        "Neon PostgresQL",
+        "Monaco Editor"
+      ],
+      "slug": "dipelajarin-code-editor",
+      "category": [2]
     }
   ]
 }

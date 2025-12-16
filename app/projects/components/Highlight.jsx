@@ -2,9 +2,9 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 
-import Merdekai1 from "@/public/images/merdekai-1.png";
-import Merdekai2 from "@/public/images/merdekai-2.png";
-import Merdekai3 from "@/public/images/merdekai-3.png";
+import Pelajarin1 from "@/public/images/Pelajarin1.png";
+import Pelajarin2 from "@/public/images/Pelajarin2.png";
+import Pelajarin3 from "@/public/images/Pelajarin3.png";
 
 export default function Highlight() {
   return (
@@ -28,7 +28,7 @@ export default function Highlight() {
                 className="w-full h-full shadow-lg"
               >
                 <Image
-                  src={Merdekai2}
+                  src={Pelajarin1}
                   alt="Resumize Project"
                   layout="fill"
                   objectFit="cover"
@@ -53,7 +53,7 @@ export default function Highlight() {
                 className="w-full h-full shadow-lg "
               >
                 <Image
-                  src={Merdekai1}
+                  src={Pelajarin2}
                   alt="Resumize Project"
                   layout="fill"
                   objectFit="cover"
@@ -78,7 +78,7 @@ export default function Highlight() {
                 className="w-full h-full shadow-lg "
               >
                 <Image
-                  src={Merdekai3}
+                  src={Pelajarin3}
                   alt="Resumize Project"
                   layout="fill"
                   objectFit="cover"
