@@ -80,15 +80,15 @@ const Hero = () => {
               variants={slideInLeftVariants}
               style={{ willChange: "transform, opacity" }}
             >
-              Junior Fullstack Developer
+              Junior Software Developer
             </motion.h1>
             <motion.p
               className="title text-md  2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
               variants={slideInLeftVariants}
               style={{ willChange: "transform, opacity" }}
             >
-              Hi! I&rsquo;am Kevin, a Junior Fullstack Developer passionate
-              about building sleek, responsive user interfaces and continuously
+              Hi! I&rsquo;am Kevin, a Junior Software Developer passionate about
+              building sleek, responsive user interfaces and continuously
               learning modern web technologies.
             </motion.p>
             <motion.div

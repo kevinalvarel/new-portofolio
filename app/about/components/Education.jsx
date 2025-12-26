@@ -1,15 +1,8 @@
-import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
-
-import Pic1 from "@/public/images/about/Education/tools.jpg";
-import Pic2 from "@/public/images/about/Education/code.jpg";
-
-import Pic3 from "@/public/images/about/Education/gsa1.jpg";
-import Pic4 from "@/public/images/about/Education/gsa2.jpg";
-import Pic5 from "@/public/images/about/Education/gsa3.jpg";
+import { motion } from "framer-motion";
 
 import { IconCertificate, IconIdBadge } from "@tabler/icons-react";
+import Experience from "./ui/Experience";
+import Achievements from "./ui/Achievements";
 
 function Wrapper({ children }) {
   return (
@@ -32,8 +25,6 @@ function Wrapper({ children }) {
 }
 
 export default function Education() {
-  const [isExpanded, setIsExpanded] = useState(false);
-
   const certificationByYear = {
     2025: [
       {
@@ -98,17 +89,6 @@ export default function Education() {
     ],
   };
 
-  const allCertification = Object.entries(certificationByYear)
-    .sort(([a], [b]) => parseInt(b) - parseInt(a))
-    .flatMap(([year, certification]) =>
-      certification.map((certification) => ({ ...certification, year }))
-    );
-
-  const visibleCertification = isExpanded
-    ? allCertification
-    : allCertification.slice(0, 6);
-  const hasMoreCertification = allCertification.length > 6;
-
   return (
     <Wrapper>
       <section className="grid gap-8 md:gap-12">
@@ -128,191 +108,10 @@ export default function Education() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Achievements Left */}
-          <motion.div
-            className="flex flex-col justify-start px-5 md:px-0"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <h2 className="font-semibold text-xl mt-7">Certification</h2>
-            <p className="text-md font-normal mb-3 md:mb-6">
-              Some of my certification and Badge during my study.
-            </p>
+          <Achievements items={certificationByYear} />
 
-            <div className="relative">
-              <div className="space-y-4">
-                <AnimatePresence>
-                  {visibleCertification.map((certification, index) => (
-                    <motion.div
-                      key={`${certification.year}-${index}`}
-                      className="group"
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -20 }}
-                      transition={{ duration: 0.5, delay: index * 0.05 }}
-                    >
-                      {index === 0 ||
-                      visibleCertification[index - 1]?.year !==
-                        certification.year ? (
-                        <div className="flex items-center gap-3 mb-3 mt-2">
-                          <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center">
-                            <span className="text-xs font-bold text-gray-600">
-                              {certification.year}
-                            </span>
-                          </div>
-                          <div className="flex-1 h-px bg-gradient-to-r from-gray-300 to-transparent"></div>
-                        </div>
-                      ) : null}
-
-                      <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl p-4 shadow-lg hover:bg-white/30 transition-all duration-300 hover:shadow-xl grayscale hover:grayscale-0">
-                        <div className="flex items-center gap-4">
-                          <div
-                            className={`aspect-square w-10 rounded-full bg-gradient-to-r ${certification.color} flex items-center justify-center text-primary-foreground transition-all duration-300`}
-                          >
-                            <span className="text-white text-lg">
-                              {certification.icon}
-                            </span>
-                          </div>
-                          <div>
-                            <h3 className="font-medium">
-                              {certification.title}
-                            </h3>
-                            <p className="text-sm">{certification.subtitle}</p>
-                            <div className="text-xs text-gray-500 mt-1">
-                              {certification.date}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </motion.div>
-                  ))}
-                </AnimatePresence>
-              </div>
-
-              {!isExpanded && hasMoreCertification && (
-                <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-stale-300 via-stale/70 to-transparent pointer-events-none"></div>
-              )}
-
-              {hasMoreCertification && (
-                <motion.div
-                  className="flex justify-center mt-6"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.5 }}
-                >
-                  <button
-                    onClick={() => setIsExpanded(!isExpanded)}
-                    className="flex items-center gap-2 px-6 py-3 bg-white/30 backdrop-blur-md border border-white/40 rounded-full hover:bg-white/40 transition-all duration-300 text-sm font-medium shadow-lg hover:shadow-xl"
-                  >
-                    <span>
-                      {isExpanded
-                        ? `Show Less`
-                        : `Show ${allCertification.length - 4} More`}
-                    </span>
-                    <span className="text-xs">{isExpanded ? "▲" : "▼"}</span>
-                  </button>
-                </motion.div>
-              )}
-            </div>
-          </motion.div>
           {/* Education Left */}
-          <motion.div
-            className="px-5"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <div className="font-medium text-lg mb-4">2024 - 2028</div>
-            <div>
-              <h2 className="font-semibold text-xl">
-                Universitas Al-Khairiyah
-              </h2>
-              <h3 className="text-md font-normal mb-3">
-                S1 Teknik Informatika | Computer Science
-              </h3>
-              <div className="gap-4 mb-4 flex items-stretch md:h-[300px] xl:h-[500px]">
-                {[Pic2, Pic1].map((src, index) => (
-                  <div
-                    key={index}
-                    className="flex-[1] transition-all duration-300 ease-in-out hover:flex-[3] group"
-                  >
-                    <Image
-                      src={src}
-                      width={400}
-                      height={225}
-                      alt="University"
-                      className="rounded-lg w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300 ease-in-out"
-                    />
-                  </div>
-                ))}
-              </div>
-              <div className="flex items-center gap-2">
-                <p className="text-gray-600 text-justify title text-lg">
-                  Aspiring to become a professional Web Developer, I&apos;m
-                  currently pursuing my Bachelor&apos;s degree in{" "}
-                  <span className="text-black font-medium">
-                    Computer Science
-                  </span>{" "}
-                  at{" "}
-                  <span className="text-black font-medium">
-                    Universitas Al-Khairiyah
-                  </span>
-                  . My journey in tech is driven by curiosity and creativity
-                  combining web development with cutting edge AI research and
-                  implementation.
-                  <br />
-                  <br />I am passionate about solving real-world problems
-                  through code, especially at the intersection of{" "}
-                  <span className="text-black font-medium">
-                    Web Development
-                  </span>{" "}
-                  and{" "}
-                  <span className="text-black font-medium">
-                    Artificial Intelligence
-                  </span>
-                  . Constantly learning, building, and collaborating I&apos;m
-                  excited to keep growing and contributing to the evolving tech
-                  landscape.
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-2 mt-4 text-sm justify-start">
-                <div className="bg-neutral-300 text-black px-2 py-1 rounded-2xl hover:bg-neutral-400 transition-all duration-300">
-                  GPA: 3.9
-                </div>
-              </div>
-            </div>
-            <div className="mt-10">
-              <div className="text-right">
-                <h2 className="font-semibold text-xl">
-                  Google Student Ambassador
-                </h2>
-                <h3 className="text-md font-normal mb-3">2025 - Present</h3>
-              </div>
-              <div className="gap-4 mb-4 flex items-stretch md:h-[300px] xl:h-[500px]">
-                {[Pic3, Pic5, Pic4].map((src, index) => (
-                  <div
-                    key={index}
-                    className="flex-[1] transition-all duration-300 ease-in-out hover:flex-[7] group"
-                  >
-                    <Image
-                      src={src}
-                      width={400}
-                      height={225}
-                      alt="University"
-                      className="rounded-lg w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300 ease-in-out"
-                    />
-                  </div>
-                ))}
-              </div>
-              <div className="flex items-center gap-2">
-                <p className="text-gray-600 text-justify title text-lg">
-                  As a Google Student Ambassador, I actively talk about Google
-                  technologies and initiatives on campus, fostering a community
-                  of innovation and collaboration among students.
-                </p>
-              </div>
-            </div>
-          </motion.div>
+          <Experience />
         </div>
       </section>
     </Wrapper>

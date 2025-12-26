@@ -119,7 +119,7 @@ export default function Intro() {
             Hey there, I&rsquo;m Muhammad Kevin Alvarel, a
             <span className="text-black font-medium">
               {" "}
-              passionate Web Developer
+              passionate Web and Mobile Developer
             </span>{" "}
             with a growing focus in modern technologies. I&rsquo;m currently
             pursuing my degree in{" "}
