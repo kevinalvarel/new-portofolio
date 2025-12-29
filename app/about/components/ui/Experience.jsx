@@ -1,5 +1,5 @@
-import Pic1 from "@/public/images/about/Education/tools.jpg";
-import Pic2 from "@/public/images/about/Education/code.jpg";
+import Pic1 from "@/public/images/about/Education/univ1.jpg";
+import Pic2 from "@/public/images/about/Education/univ2.jpg";
 
 import Pic3 from "@/public/images/about/Education/gsa1.jpg";
 import Pic4 from "@/public/images/about/Education/gsa2.jpg";
