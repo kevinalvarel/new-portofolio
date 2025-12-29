@@ -128,7 +128,8 @@
       "images": [
         "/images/project/CodeEditor/Pelajarin1.png",
         "/images/project/CodeEditor/Pelajarin2.png",
-        "/images/project/CodeEditor/Pelajarin3.png"
+        "/images/project/CodeEditor/Pelajarin3.png",
+        "/images/project/CodeEditor/Pelajarin4.png"
       ],
       "tech": [
         "NextJS",
