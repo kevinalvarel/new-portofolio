@@ -18,11 +18,9 @@ import Portoblog5 from "@/public/images/project/Portoblog/Portoblog5.png";
 
 export function HeroProject() {
   return (
-    <>
-      <div className="overflow-x-hidden">
-        <HeroParallax products={products} />;
-      </div>
-    </>
+    <div className="overflow-x-hidden">
+      <HeroParallax products={products} />;
+    </div>
   );
 }
 export const products = [
