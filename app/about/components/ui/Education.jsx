@@ -8,7 +8,7 @@ import Pic5 from "@/public/images/about/Education/gsa3.jpg";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const Experience = () => {
+const Education = () => {
   return (
     <motion.div
       className="px-5"
@@ -66,7 +66,9 @@ const Experience = () => {
       <div className="mt-10">
         <div className="text-right">
           <h2 className="font-semibold text-xl">Google Student Ambassador</h2>
-          <h3 className="text-md font-normal mb-3">2025 - Present</h3>
+          <h3 className="text-md font-normal mb-3">
+            September 2025 - December 2025
+          </h3>
         </div>
         <div className="gap-4 mb-4 flex items-stretch md:h-[200px] xl:h-[300px]">
           {[Pic3, Pic5, Pic4].map((src, index) => (
@@ -96,4 +98,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Education;

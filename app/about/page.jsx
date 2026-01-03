@@ -3,7 +3,7 @@ import React from "react";
 import { TimelineAbout } from "./components/TimelineAbout";
 import Intro from "./components/Intro";
 import Techstack from "./components/Techstack";
-import Education from "./components/Education";
+import Experience from "./components/Experience";
 
 const Page = () => {
   return (
@@ -11,7 +11,7 @@ const Page = () => {
       <Intro />
       <TimelineAbout />
       <Techstack />
-      <Education />
+      <Experience />
     </main>
   );
 };

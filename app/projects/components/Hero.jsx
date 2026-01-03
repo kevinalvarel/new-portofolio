@@ -23,6 +23,7 @@ export function HeroProject() {
     </div>
   );
 }
+
 export const products = [
   {
     id: 1,

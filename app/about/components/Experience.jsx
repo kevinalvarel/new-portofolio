@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import { IconCertificate, IconIdBadge } from "@tabler/icons-react";
-import Experience from "./ui/Experience";
+import Education from "./ui/Education";
 import Achievements from "./ui/Achievements";
 
 function Wrapper({ children }) {
@@ -24,8 +24,17 @@ function Wrapper({ children }) {
   );
 }
 
-export default function Education() {
+export default function Experience() {
   const certificationByYear = {
+    2026: [
+      {
+        icon: <IconIdBadge />,
+        title: "Google Cloud Course Badge",
+        subtitle: "Manage Data Models in Looker",
+        date: "2025",
+        color: "from-sky-400 to-blue-500",
+      },
+    ],
     2025: [
       {
         icon: <IconIdBadge />,
@@ -99,7 +108,7 @@ export default function Education() {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-3xl md:text-4xl font-bold tracking-tighter">
-            Education
+            Experience & Education
           </h1>
           <p className="text-neutral-600 max-w-[800px] mx-auto">
             Get to know more about my educational background.
@@ -111,7 +120,7 @@ export default function Education() {
           <Achievements items={certificationByYear} />
 
           {/* Education Left */}
-          <Experience />
+          <Education />
         </div>
       </section>
     </Wrapper>
