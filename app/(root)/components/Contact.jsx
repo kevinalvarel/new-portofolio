@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 
-import kontak from "@/public/images/setup.jpg";
+import contact from "@/public/images/setup.jpg";
 
 import { motion } from "motion/react";
 
@@ -78,7 +78,7 @@ const Contact = () => {
             style={{ willChange: "transform, opacity" }}
           >
             <Image
-              src={kontak}
+              src={contact}
               layout="fill"
               className="object-cover"
               alt="Kev"
