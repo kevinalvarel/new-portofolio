@@ -92,20 +92,19 @@ const Hero = () => {
               learning modern web technologies.
             </motion.p>
             <motion.div
-              className="buttons flex flex-row justify-center items-center space-x-4 mt-10"
+              className="buttons flex flex-row justify-center items-center space-x-4 mt-10 "
               variants={slideInLeftVariants}
               style={{ willChange: "transform, opacity" }}
             >
-              <Button variation="primary">
-                <Link
-                  href={"/docs/cv.pdf"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  download
-                >
-                  Download CV
-                </Link>
-              </Button>
+              <Link
+                href={"/docs/Muhammad_Kevin_Alvarel.pdf"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer"
+                download
+              >
+                <Button variation="primary">Download CV</Button>
+              </Link>
               <Button variation="secondary">
                 <a href="#contact">Contact Me</a>
               </Button>
