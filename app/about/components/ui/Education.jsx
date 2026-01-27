@@ -89,8 +89,13 @@ const Education = () => {
         <div className="flex items-center gap-2">
           <p className="text-gray-600 text-justify title text-lg">
             As a Google Student Ambassador, I actively talk about Google
-            technologies and initiatives on campus, fostering a community of
-            innovation and collaboration among students.
+            technologies especially Gemini AI and initiatives on campus,
+            fostering a community of innovation and collaboration among
+            students.
+            <br /> <br />I demonstrate this advocacy by sharing insights on
+            Generative AI as a speaker at national seminars and leveraging my
+            status as a Gemini Certified Educator to help peers navigate and
+            utilize Google's latest AI ecosystem effectively.
           </p>
         </div>
       </div>

@@ -118,7 +118,6 @@ export default function Experience() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Achievements Left */}
           <Achievements items={certificationByYear} />
-
           {/* Education Left */}
           <Education />
         </div>
