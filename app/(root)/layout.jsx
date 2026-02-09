@@ -24,6 +24,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <meta
+        name="google-site-verification"
+        content="rF9WLaIcP-YLWT3xhZmJNbclePpd-g3vg3Ise4tr0uY"
+      />
       <body className={`${poppins.variable} ${jost.variable} antialiased`}>
         <Header />
         {children}
