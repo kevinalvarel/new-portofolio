@@ -17,7 +17,9 @@ const jost = Jost({
 
 export const metadata = {
   title: "Kevin Alvarel | Project",
-  description: "Project page showcasing Kevin Alvarel's work and skills.",
+  description:
+    "Project page showcasing Kevin Alvarel's work and skills. Explore his portfolio of web development projects.",
+  icon: "/favicon.ico",
 };
 
 export default function RootLayout({ children }) {

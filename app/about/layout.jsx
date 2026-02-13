@@ -19,6 +19,7 @@ export const metadata = {
   title: "Kevin Alvarel | About",
   description:
     "Kevin is a software developer specializing in web development and design. Explore his projects, skills, and contact information.",
+  icon: "/favicon.ico",
 };
 
 export default function RootLayout({ children }) {

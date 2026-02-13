@@ -18,7 +18,8 @@ const jost = Jost({
 export const metadata = {
   title: "Kevin Alvarel | Portofolio",
   description:
-    "Portofolio Muhammad Kevin Alvarel, Junior Software Developer specializing in React.js and Next.js.",
+    "Portofolio Muhammad Kevin Alvarel, Junior Software Developer specializing in React JS",
+  icon: "/favicon.ico",
 };
 
 export default function RootLayout({ children }) {
