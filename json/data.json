@@ -140,6 +140,32 @@
       ],
       "slug": "dipelajarin-code-editor",
       "category": [2]
+    },
+    {
+      "show": true,
+      "title": "SMKS YP 17 Cilegon",
+      "desc": [
+        "SMKS YP 17 Cilegon is a web-based application designed for educational purposes. It allows users to access information about the school, such as the curriculum, extracurricular activities, and contact information.",
+        "The application is built using Next.js and provides a user-friendly interface with real-time collaboration features."
+      ],
+      "year": "2026",
+      "preview": "profile-smksyp17.vercel.app",
+      "code": "",
+      "thumbnail": "/images/project/SMKS/smks17-1.png",
+      "images": [
+        "/images/project/SMKS/smks17-1.png",
+        "/images/project/SMKS/smks17-2.png",
+        "/images/project/SMKS/smks17-3.png"
+      ],
+      "tech": [
+        "NextJS",
+        "Typescript",
+        "Drizzle",
+        "Neon PostgresQL",
+        "Better Auth"
+      ],
+      "slug": "SMKSYP17Cilegon",
+      "category": [2]
     }
   ]
 }

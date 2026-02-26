@@ -53,7 +53,7 @@ function Page(props) {
   const [data, setData] = useState(null);
   useEffect(() => {
     const selectedData = jsonData.Projects.find(
-      (item) => item.slug === params.slug
+      (item) => item.slug === params.slug,
     );
     if (selectedData === undefined) {
       setData("404");
