@@ -177,7 +177,7 @@ function Page(props) {
                     rel="noopener noreferrer"
                     className="hover:underline"
                   >
-                    View on Github <span className="ml-2">⚡</span>
+                    View on Github
                   </a>
                 </p>
               </div>
