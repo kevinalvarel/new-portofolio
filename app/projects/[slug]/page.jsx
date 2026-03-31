@@ -6,6 +6,7 @@ import { NotFound } from "next/error";
 
 import Image from "next/image";
 import BlurImage from "@/public/images/placeholder/blur.jpg";
+import SkeletonSlug from "./components/SkeletonSlug";
 
 function ScrollDownButton() {
   const [isAtBottom, setIsAtBottom] = useState(false);
@@ -69,30 +70,7 @@ function Page(props) {
       </>
     );
   } else if (!data) {
-    return (
-      <div className="relative min-h-screen w-full  gap-4 p-10 flex justify-center items-center flex-col mb-10 ">
-        <div className="min-h-screen flex justify-center items-center w-full">
-          <div className="mx-auto grid grid-cols-1 md:grid-cols-2  w-full">
-            <div className="flex justify-center items-start flex-col mb-5 space-y-10 w-ful p-4">
-              <div className="animate-pulse bg-neutral-400 h-20 w-full rounded shadow-lg"></div>
-              <div className="animate-pulse bg-neutral-400 h-20 w-full rounded shadow-lg"></div>
-              <div className="animate-pulse bg-neutral-400 h-20 w-full rounded shadow-lg"></div>
-              <div className="animate-pulse bg-neutral-400 h-20 w-full rounded shadow-lg"></div>
-              <div className="animate-pulse bg-neutral-400 h-20 w-full rounded shadow-lg"></div>
-            </div>
-            <div className="flex justify-start items-start flex-col mb-5 w-full p-4">
-              <div className="animate-pulse duration-500 shadow-lg bg-neutral-400 rounded  w-full h-full "></div>
-            </div>
-          </div>
-        </div>
-        {/* images */}
-        <div className="mx-auto grid grid-cols-1 p-5 md:p-20  w-full h-auto">
-          <div className="w-full h-auto aspect-video">
-            <div className="animate-pulse duration-500 shadow-lg bg-neutral-400 h-full w-full rounded"></div>
-          </div>
-        </div>
-      </div>
-    );
+    return <SkeletonSlug />;
   }
   return (
     <div className="relative min-h-screen w-full gap-4 p-10 flex justify-center items-center flex-col mb-10 ">

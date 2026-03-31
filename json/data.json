@@ -177,19 +177,16 @@
       "year": "2026",
       "preview": "",
       "code": "",
-      "thumbnail": "/images/project/SMKS/smks17-1.png",
+      "thumbnail": "/images/project/NeoPhotobooth/1.png",
       "images": [
-        "/images/project/SMKS/smks17-1.png",
-        "/images/project/SMKS/smks17-2.png",
-        "/images/project/SMKS/smks17-3.png"
+        "/images/project/NeoPhotobooth/1.png",
+        "/images/project/NeoPhotobooth/2.png",
+        "/images/project/NeoPhotobooth/3.png",
+        "/images/project/NeoPhotobooth/4.png",
+        "/images/project/NeoPhotobooth/5.png",
+        "/images/project/NeoPhotobooth/6.png"
       ],
-      "tech": [
-        "NextJS",
-        "Typescript",
-        "Drizzle",
-        "Neon PostgresQL",
-        "Better Auth"
-      ],
+      "tech": ["NextJS", "Typescript", "Tailwind CSS", "Zustand"],
       "slug": "neo-photobooth",
       "category": [3]
     }
