@@ -9,6 +9,7 @@ export default function Project() {
   const category = {
     1: "Landing Page",
     2: "Full Stack",
+    3: "Team Project",
     9: "Other",
   };
   const [activeCategory, setActiveCategory] = useState(1);

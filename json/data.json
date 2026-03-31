@@ -164,8 +164,34 @@
         "Neon PostgresQL",
         "Better Auth"
       ],
-      "slug": "SMKSYP17Cilegon",
+      "slug": "smks-yp-17-cilegon",
       "category": [2]
+    },
+    {
+      "show": true,
+      "title": "Neo Photobooth",
+      "desc": [
+        "Neo Photobooth is a web-based application designed for photobooth purposes. It allows users to take photos and print them out.",
+        "The application is built using Next.js and provides a user-friendly interface with real-time collaboration features."
+      ],
+      "year": "2026",
+      "preview": "",
+      "code": "",
+      "thumbnail": "/images/project/SMKS/smks17-1.png",
+      "images": [
+        "/images/project/SMKS/smks17-1.png",
+        "/images/project/SMKS/smks17-2.png",
+        "/images/project/SMKS/smks17-3.png"
+      ],
+      "tech": [
+        "NextJS",
+        "Typescript",
+        "Drizzle",
+        "Neon PostgresQL",
+        "Better Auth"
+      ],
+      "slug": "neo-photobooth",
+      "category": [3]
     }
   ]
 }
