@@ -80,14 +80,14 @@ const Hero = () => {
               variants={slideInLeftVariants}
               style={{ willChange: "transform, opacity" }}
             >
-              Junior Software Developer
+              Junior Software Engineer
             </motion.h1>
             <motion.p
               className="title text-md  2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
               variants={slideInLeftVariants}
               style={{ willChange: "transform, opacity" }}
             >
-              Hi! I&rsquo;am Kevin, a Junior Software Developer passionate about
+              Hi! I&rsquo;am Kevin, a Junior Software Engineer passionate about
               building sleek, responsive user interfaces and continuously
               learning modern web technologies.
             </motion.p>
@@ -97,7 +97,7 @@ const Hero = () => {
               style={{ willChange: "transform, opacity" }}
             >
               <Link
-                href={"/docs/Muhammad_Kevin_Alvarel.pdf"}
+                href={"/docs/curriculum-vitae.pdf"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cursor-pointer"
