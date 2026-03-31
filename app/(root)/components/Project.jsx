@@ -80,7 +80,7 @@ const Project = () => {
             My Projects
           </motion.h1>
           <motion.p
-            className="title  text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5"
+            className="title  text-lg md:text-[15px] lg:text-[20px] mt-4 tracking-wider text-gray-500 leading-[1.7rem] md:mb-5"
             variants={slideInLeftVariants}
             initial="hidden"
             whileInView="visible"
