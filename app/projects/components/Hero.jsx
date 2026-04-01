@@ -6,15 +6,21 @@ import Ecommerce2 from "@/public/images/project/Ecommerce/ecommerce2.png";
 import Ecommerce3 from "@/public/images/project/Ecommerce/ecommerce3.png";
 import Ecommerce4 from "@/public/images/project/Ecommerce/ecommerce4.png";
 
-import Coffeshop1 from "@/public/images/project/Coffeeshop/Kopi1.png";
-import Coffeshop2 from "@/public/images/project/Coffeeshop/Kopi2.png";
-import Coffeshop3 from "@/public/images/project/Coffeeshop/Kopi3.png";
+import SMKS1 from "@/public/images/project/SMKS/smks17-1.png";
+import SMKS2 from "@/public/images/project/SMKS/smks17-2.png";
+import SMKS3 from "@/public/images/project/SMKS/smks17-3.png";
 
-import Portoblog1 from "@/public/images/project/Portoblog/Portoblog1.png";
-import Portoblog2 from "@/public/images/project/Portoblog/Portoblog2.png";
-import Portoblog3 from "@/public/images/project/Portoblog/Portoblog3.png";
-import Portoblog4 from "@/public/images/project/Portoblog/Portoblog4.png";
-import Portoblog5 from "@/public/images/project/Portoblog/Portoblog5.png";
+import CodeEditor1 from "@/public/images/project/CodeEditor/Pelajarin1.png";
+import CodeEditor2 from "@/public/images/project/CodeEditor/Pelajarin2.png";
+import CodeEditor3 from "@/public/images/project/CodeEditor/Pelajarin3.png";
+
+import DcnUnival1 from "@/public/images/project/DcnUnival/dcn1.png";
+import DcnUnival2 from "@/public/images/project/DcnUnival/dcn2.png";
+import DcnUnival3 from "@/public/images/project/DcnUnival/dcn3.png";
+
+import Merdekai1 from "@/public/images/project/Merdekai/merdekai-1.png";
+import Merdekai2 from "@/public/images/project/Merdekai/merdekai-2.png";
+import Merdekai3 from "@/public/images/project/Merdekai/merdekai-3.png";
 
 export function HeroProject() {
   return (
@@ -51,68 +57,74 @@ export const products = [
   },
   {
     id: 5,
-    title: "Static Landing Page 2",
+    title: "School Profile Website",
     link: "https://neggvscoffee.netlify.app/",
-    thumbnail: Coffeshop1,
+    thumbnail: SMKS1,
   },
   {
     id: 6,
-    title: "Static Landing Page 2",
+    title: "School Profile Website 2",
     link: "https://neggvscoffee.netlify.app/",
-    thumbnail: Coffeshop1,
+    thumbnail: SMKS2,
   },
   {
     id: 7,
-    title: "Static Landing Page 3",
+    title: "School Profile Website 3",
     link: "https://neggvscoffee.netlify.app/",
-    thumbnail: Coffeshop2,
+    thumbnail: SMKS3,
   },
   {
     id: 8,
-    title: "Static Landing Page 4",
+    title: "MerdekAI",
     link: "https://neggvscoffee.netlify.app/",
-    thumbnail: Coffeshop3,
+    thumbnail: Merdekai1,
   },
   {
     id: 9,
-    title: "Static Landing Page 4",
+    title: "MerdekAI 2",
     link: "https://neggvscoffee.netlify.app/",
-    thumbnail: Coffeshop2,
+    thumbnail: Merdekai2,
   },
   {
     id: 10,
-    title: "Static Landing Page 4",
+    title: "MerdekAI 3",
     link: "https://neggvscoffee.netlify.app/",
-    thumbnail: Coffeshop1,
+    thumbnail: Merdekai3,
   },
   {
     id: 11,
-    title: "Static Landing Page 4",
+    title: "Dipelajarin - Code Editor 1",
     link: "https://neggvscoffee.netlify.app/",
-    thumbnail: Portoblog1,
+    thumbnail: CodeEditor1,
   },
   {
     id: 12,
-    title: "Static Landing Page 4",
+    title: "Dipelajarin - Code Editor 2",
     link: "https://neggvscoffee.netlify.app/",
-    thumbnail: Portoblog2,
+    thumbnail: CodeEditor2,
   },
   {
     id: 13,
-    title: "Static Landing Page 4",
+    title: "Dipelajarin - Code Editor 3",
     link: "https://neggvscoffee.netlify.app/",
-    thumbnail: Portoblog3,
+    thumbnail: CodeEditor3,
   },
   {
     id: 14,
-    title: "Static Landing Page 4",
+    title: "Dipelajarin - Code Editor 3",
     link: "https://neggvscoffee.netlify.app/",
-    thumbnail: Portoblog4,
+    thumbnail: DcnUnival1,
   },
   {
     id: 15,
-    title: "Static Landing Page 4",
+    title: "Dipelajarin - Code Editor 3",
     link: "https://neggvscoffee.netlify.app/",
-    thumbnail: Portoblog5,
+    thumbnail: DcnUnival2,
+  },
+  {
+    id: 16,
+    title: "Dipelajarin - Code Editor 3",
+    link: "https://neggvscoffee.netlify.app/",
+    thumbnail: DcnUnival3,
   },
 ];

@@ -10,6 +10,7 @@
       "year": "2025",
       "preview": "https://kevinalvarel-portofolio.vercel.app/",
       "code": "",
+      "Role": "Fullstack",
       "thumbnail": "/images/project/Portoblog/Portoblog1.png",
       "images": [
         "/images/project/Portoblog/Portoblog1.png",
@@ -25,6 +26,7 @@
         "Tailwind CSS",
         "AceternityUI"
       ],
+
       "slug": "portoblog",
       "category": [2]
     },
@@ -37,6 +39,7 @@
       "year": "2025",
       "preview": "https://merdekai.my.id/",
       "code": "",
+      "Role": "Front-end",
       "thumbnail": "/images/project/Merdekai/merdekai-2.png",
       "images": [
         "/images/project/Merdekai/merdekai-1.png",
@@ -51,7 +54,7 @@
         "AceternityUI"
       ],
       "slug": "merdekai",
-      "category": [2]
+      "category": [3]
     },
     {
       "show": true,
@@ -63,6 +66,7 @@
       "year": "2025",
       "preview": "https://epocaid.netlify.app/",
       "code": "",
+      "Role": "Front-end",
       "thumbnail": "/images/project/Ecommerce/ecommerce1.png",
       "images": [
         "/images/project/Ecommerce/ecommerce1.png",
@@ -84,6 +88,7 @@
       "year": "2025",
       "preview": "https://neggvscoffee.netlify.app/",
       "code": "",
+      "Role": "Front-end",
       "thumbnail": "/images/project/Coffeeshop/Kopi1.png",
       "images": [
         "/images/project/Coffeeshop/Kopi1.png",
@@ -104,6 +109,7 @@
       "year": "2025",
       "preview": "https://dcnunival.my.id/",
       "code": "",
+      "Role": "Fullstack",
       "thumbnail": "/images/project/DcnUnival/dcn1.png",
       "images": [
         "/images/project/DcnUnival/dcn1.png",
@@ -124,6 +130,7 @@
       "year": "2025",
       "preview": "https://dipelajarin.vercel.app/",
       "code": "",
+      "Role": "Fullstack",
       "thumbnail": "/images/project/CodeEditor/Pelajarin1.png",
       "images": [
         "/images/project/CodeEditor/Pelajarin1.png",
@@ -151,6 +158,7 @@
       "year": "2026",
       "preview": "profile-smksyp17.vercel.app",
       "code": "",
+      "Role": "Back-end",
       "thumbnail": "/images/project/SMKS/smks17-1.png",
       "images": [
         "/images/project/SMKS/smks17-1.png",
@@ -165,7 +173,7 @@
         "Better Auth"
       ],
       "slug": "smks-yp-17-cilegon",
-      "category": [2]
+      "category": [3]
     },
     {
       "show": true,
@@ -177,6 +185,7 @@
       "year": "2026",
       "preview": "",
       "code": "",
+      "Role": "Front-end",
       "thumbnail": "/images/project/NeoPhotobooth/1.png",
       "images": [
         "/images/project/NeoPhotobooth/1.png",

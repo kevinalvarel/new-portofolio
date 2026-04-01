@@ -35,6 +35,9 @@ export default function ProjectCard({ project, index, activeCategory }) {
             <div className="absolute top-0 left-0 bg-neutral-900/80 px-3 py-1 rounded-md">
               <h4 className="text-white">{project.year}</h4>
             </div>
+            <div className="absolute bottom-0 right-0 bg-neutral-900/80 px-3 py-1 rounded-md">
+              <h4 className="text-white">{project.Role}</h4>
+            </div>
             <div className="transition-all ease duration-500 opacity-100 content text-center group-hover/tes:opacity-0 z-10">
               <h1 className="text-3xl font-bold mb-3">{project.title}</h1>
               <p>
