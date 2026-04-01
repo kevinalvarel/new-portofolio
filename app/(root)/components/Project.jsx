@@ -46,23 +46,34 @@ const fadeUpVariants = {
   },
 };
 
+const OnHoverRight = {
+  rotate: 3,
+  transition: {
+    type: "spring",
+    stiffness: 200,
+    damping: 20,
+    duration: 0.15,
+  },
+};
+
 const Project = () => {
   return (
     <div className="section" id="project">
       <div className="relative md:h-screen w-screen gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
         <div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
           <motion.div
-            className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 duration-100 rounded-bl-4xl rounded-tl-4xl rounded-r-lg"
+            className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 rounded-br-4xl rounded-tr-4xl rounded-l-lg"
             variants={slideInRightVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
+            whileHover={OnHoverRight}
             style={{ willChange: "transform, opacity" }}
           >
             <Image
               src={MyProject}
               layout="fill"
-              className="object-cover"
+              className="object-cover rounded-br-4xl rounded-tr-4xl rounded-l-lg "
               alt="Kevin Project"
               placeholder="blur"
             />

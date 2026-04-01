@@ -64,23 +64,34 @@ const iconVariants = {
   },
 };
 
+const OnHoverLeft = {
+  rotate: -3,
+  transition: {
+    type: "spring",
+    stiffness: 200,
+    damping: 20,
+    duration: 0.15,
+  },
+};
+
 const Contact = () => {
   return (
     <div className="section" id="contact">
       <div className="relative md:h-screen w-screen  gap-4 p-10 flex justify-center items-center flex-col overflow-hidden">
         <div className="z-0 mb-48 md:mb-0  md:absolute top-1/4  md:right-[10%] md:-translate-y-16 ">
           <motion.div
-            className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0"
+            className="bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 rounded-br-4xl rounded-tr-4xl rounded-l-lg"
             variants={slideInRightVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
+            whileHover={OnHoverLeft}
             style={{ willChange: "transform, opacity" }}
           >
             <Image
               src={contact}
               layout="fill"
-              className="object-cover"
+              className="object-cover rounded-br-4xl rounded-tr-4xl rounded-l-lg"
               alt="Kev"
               placeholder="blur"
             />
@@ -106,7 +117,7 @@ const Contact = () => {
             style={{ willChange: "transform, opacity" }}
           >
             Feel free to contact me if you have any{" "}
-            <span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
+            <span className="bg-transparent sm:bg-gray-100 md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
               questions or just want to say hi.
             </span>
           </motion.p>

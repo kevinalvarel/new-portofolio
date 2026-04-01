@@ -44,6 +44,16 @@ const slideInRightVariants = {
   },
 };
 
+const OnHoverLeft = {
+  rotate: -3,
+  transition: {
+    type: "spring",
+    stiffness: 200,
+    damping: 20,
+    duration: 0.15,
+  },
+};
+
 const Hero = () => {
   return (
     <>
@@ -58,7 +68,7 @@ const Hero = () => {
             style={{ willChange: "opacity" }}
           >
             <div className="block md:hidden col-span-1 mx-auto my-10">
-              <div className="bg-slate-500 rounded-full h-60 w-60 transition-all  grayscale blur-xs hover:blur-none hover:grayscale-0 duration-300 ease">
+              <div className="bg-slate-500 rounded-full h-60 w-60 transition-all grayscale blur-xs hover:blur-none hover:grayscale-0 duration-300 ease">
                 <Image
                   src={Me}
                   width={500}
@@ -119,9 +129,8 @@ const Hero = () => {
             style={{ willChange: "transform, opacity" }}
           >
             <motion.div
-              className="rounded-full h-auto w-auto lg:px-12 grayscale blur-xs hover:blur-none hover:grayscale-0 duration-100"
-              whileHover={{ scale: 1.03 }}
-              transition={{ type: "tween", duration: 0.2 }}
+              className="rounded-full h-auto w-auto lg:px-12 grayscale blur-xs hover:blur-none hover:grayscale-0 "
+              whileHover={OnHoverLeft}
             >
               <Image
                 src={Me}
