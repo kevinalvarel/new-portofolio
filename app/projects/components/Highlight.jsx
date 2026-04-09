@@ -17,7 +17,7 @@ export default function Highlight() {
       <div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10 overflow-x-hidden">
         <div className="flex justify-center items-start flex-col mb-5 ">
           <div className="images relative w-full  aspect-square">
-            <div className="absolute top-40 left-10 h-[40%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-125 z-10 hover:z-20">
+            <div className="absolute top-40 left-10 h-[40%] aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-125 z-10 hover:z-20">
               <motion.div
                 initial={{ opacity: 0, scale: 0.5, x: 100 }}
                 whileInView={{
@@ -37,7 +37,7 @@ export default function Highlight() {
                 />
               </motion.div>
             </div>
-            <div className="absolute top-8 -right-8 h-[30%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-125 hover:z-20">
+            <div className="absolute hidden md:block top-8 -right-8 h-[30%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-125 hover:z-20">
               <motion.div
                 initial={{
                   opacity: 0,
@@ -63,7 +63,7 @@ export default function Highlight() {
               </motion.div>
             </div>
 
-            <div className="absolute bottom-60 left-90 h-[30%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-125 z-10 hover:z-20">
+            <div className="absolute hidden md:block bottom-60 left-90 h-[30%]  aspect-video grayscale hover:grayscale-0 transition-all ease duration-300 hover:scale-125 z-10 hover:z-20">
               <motion.div
                 initial={{
                   opacity: 0,
