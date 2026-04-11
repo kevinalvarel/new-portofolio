@@ -25,14 +25,45 @@ function Wrapper({ children }) {
 }
 
 export default function Experience() {
+  const colorBadge = "from-sky-400 to-blue-500";
+  const colorCertificate = "from-yellow-400 to-orange-500";
+
   const certificationByYear = {
     2026: [
+      {
+        icon: <IconCertificate />,
+        title: "Dicoding Certification",
+        subtitle: "Belajar Dasar Pemrograman JavaScript",
+        date: "2026",
+        color: colorCertificate,
+      },
+      {
+        icon: <IconCertificate />,
+        title: "Dicoding Certification",
+        subtitle: "Belajar Membuat Front-End Web untuk Pemula",
+        date: "2026",
+        color: colorCertificate,
+      },
+      {
+        icon: <IconCertificate />,
+        title: "Dicoding Certification",
+        subtitle: "Belajar Membuat Aplikasi Web dengan React",
+        date: "2026",
+        color: colorCertificate,
+      },
       {
         icon: <IconIdBadge />,
         title: "Google Cloud Course Badge",
         subtitle: "Manage Data Models in Looker",
-        date: "2025",
-        color: "from-sky-400 to-blue-500",
+        date: "2026",
+        color: colorBadge,
+      },
+      {
+        icon: <IconIdBadge />,
+        title: "Google Cloud Course Badge",
+        subtitle: "Use Machine Learning APIs on Google Cloud Skill Badge",
+        date: "2026",
+        color: colorBadge,
       },
     ],
     2025: [
@@ -41,14 +72,14 @@ export default function Experience() {
         title: "Google Cloud Skill Badge",
         subtitle: "Manage Data Models in Looker",
         date: "2025",
-        color: "from-sky-400 to-blue-500",
+        color: colorBadge,
       },
       {
         icon: <IconIdBadge />,
         title: "Google Cloud Badge",
         subtitle: "Analyze Speech and Language with Google APIs Skill Badge",
         date: "2025",
-        color: "from-sky-400 to-blue-500",
+        color: colorBadge,
       },
       {
         icon: <IconIdBadge />,
@@ -56,28 +87,21 @@ export default function Experience() {
         subtitle:
           "Build Real World AI Applications with Gemini and Imagen Skill Badge",
         date: "2025",
-        color: "from-sky-400 to-blue-500",
+        color: colorBadge,
       },
       {
         icon: <IconIdBadge />,
         title: "IBM SkillsBuild Badge",
         subtitle: "Code Generation and Optimization Using IBM Granite",
         date: "2025",
-        color: "from-sky-400 to-blue-500",
+        color: colorBadge,
       },
       {
         icon: <IconCertificate />,
         title: "Dicoding Certification",
         subtitle: "Cloud dan Gen AI di AWS",
         date: "2025",
-        color: "from-yellow-400 to-orange-500",
-      },
-      {
-        icon: <IconCertificate />,
-        title: "Dicoding Certification",
-        subtitle: "Pemrograman Javascript Menengah",
-        date: "2025",
-        color: "from-yellow-400 to-orange-500",
+        color: colorCertificate,
       },
     ],
     2024: [
@@ -86,14 +110,14 @@ export default function Experience() {
         title: "Google Cloud",
         subtitle: "Classify Images with TensorFlow on Google Cloud",
         date: "2024",
-        color: "from-sky-400 to-blue-500",
+        color: colorCertificate,
       },
       {
         icon: <IconCertificate />,
         title: "Google Cloud",
         subtitle: "Build LookML Objects in Looker Skill Badge",
         date: "2024",
-        color: "from-sky-400 to-blue-500",
+        color: colorCertificate,
       },
     ],
   };

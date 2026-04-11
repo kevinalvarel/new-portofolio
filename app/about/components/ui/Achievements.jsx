@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link";
 
 const Achievements = ({ items }) => {
   const [isExpanded, setIsExpanded] = useState(false);
