@@ -19,6 +19,11 @@ import project2 from "@/public/images/about/Journey/project2.png";
 import project3 from "@/public/images/about/Journey/project3.png";
 import project4 from "@/public/images/about/Journey/project4.png";
 
+import Merdekai1 from "@/public/images/about/Journey/merdekai-1.png";
+import Merdekai2 from "@/public/images/about/Journey/merdekai-2.png";
+import Merdekai3 from "@/public/images/about/Journey/merdekai-3.png";
+import Merdekai4 from "@/public/images/about/Journey/merdekai-4.png";
+
 export function TimelineAbout() {
   const data = [
     {
@@ -199,6 +204,69 @@ export function TimelineAbout() {
             <Image
               placeholder="blur"
               src={ecommerce4}
+              alt="startup template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-br-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+          </motion.div>
+        </div>
+      ),
+    },
+    {
+      title: "2026",
+      description: (
+        <motion.p
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            type: "spring",
+          }}
+          className="mb-8 text-xs font-normal text-neutral-800 md:text-sm "
+        >
+          built AI Chatbot, a chatbot that can answer questions and provide
+          information about a specific topic or service.
+        </motion.p>
+      ),
+      content: (
+        <div>
+          <motion.div
+            className="grid grid-cols-2 gap-4"
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              type: "spring",
+            }}
+          >
+            <Image
+              placeholder="blur"
+              src={Merdekai1}
+              alt="Portofolio 2023"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-tl-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <Image
+              placeholder="blur"
+              src={Merdekai2}
+              alt="startup template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-tr-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <Image
+              placeholder="blur"
+              src={Merdekai3}
+              alt="startup template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-bl-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <Image
+              placeholder="blur"
+              src={Merdekai4}
               alt="startup template"
               width={500}
               height={500}
