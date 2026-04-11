@@ -97,7 +97,7 @@ const Achievements = ({ items }) => {
               </span>
               <span className="text-xs">{isExpanded ? "▲" : "▼"}</span>
             </button>
-            <button
+            {/* <button
               className={
                 isExpanded
                   ? "ml-4 flex items-center gap-2 px-6 py-3 bg-white/20 backdrop-blur-md border border-white/40 rounded-full hover:bg-white/40 transition-all duration-300 text-sm font-medium shadow-lg hover:shadow-xl cursor-pointer"
@@ -105,7 +105,7 @@ const Achievements = ({ items }) => {
               }
             >
               <Link href="/certificates">Show All Certificates</Link>
-            </button>
+            </button> */}
           </motion.div>
         )}
       </div>
