@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 const Achievements = ({ items }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -7,7 +8,7 @@ const Achievements = ({ items }) => {
   const allCertification = Object.entries(items)
     .sort(([a], [b]) => parseInt(b) - parseInt(a))
     .flatMap(([year, certification]) =>
-      certification.map((certification) => ({ ...certification, year }))
+      certification.map((certification) => ({ ...certification, year })),
     );
 
   const visibleCertification = isExpanded
@@ -92,9 +93,18 @@ const Achievements = ({ items }) => {
               <span>
                 {isExpanded
                   ? `Show Less`
-                  : `Show ${allCertification.length - 4} More`}
+                  : `Show ${allCertification.length - 4} More `}
               </span>
               <span className="text-xs">{isExpanded ? "▲" : "▼"}</span>
+            </button>
+            <button
+              className={
+                isExpanded
+                  ? "ml-4 flex items-center gap-2 px-6 py-3 bg-white/20 backdrop-blur-md border border-white/40 rounded-full hover:bg-white/40 transition-all duration-300 text-sm font-medium shadow-lg hover:shadow-xl cursor-pointer"
+                  : "hidden"
+              }
+            >
+              <Link href="/certificates">Show All Certificates</Link>
             </button>
           </motion.div>
         )}
