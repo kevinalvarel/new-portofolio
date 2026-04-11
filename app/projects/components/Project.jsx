@@ -10,7 +10,6 @@ export default function Project() {
     1: "Landing Page",
     2: "Full Stack",
     3: "Team Project",
-    9: "Other",
   };
   const [activeCategory, setActiveCategory] = useState(1);
 
