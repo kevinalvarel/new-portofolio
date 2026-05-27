@@ -79,9 +79,9 @@ const About = () => {
           style={{ willChange: "transform, opacity" }}
           className="flex items-center justify-center"
         >
-          <Button variation="primary">
-            <Link href="/about">Learn More</Link>
-          </Button>
+          <Link href="/about">
+            <Button variation="primary">Learn More</Button>
+          </Link>
         </motion.div>
       </div>
     </div>
