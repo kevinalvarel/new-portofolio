@@ -49,19 +49,16 @@ export default function Highlight() {
           transition={{
             delay: 0.5,
             type: "spring",
-          }}
-        >
+          }}>
           <h2 className="text-2xl font-bold tracking-wider mb-3">KaloriKU</h2>
           <p className="text-gray-600 text-justify title text-lg">
-            Kaloriku adalah aplikasi yang membantu pengguna untuk memantau
-            asupan kalori harian mereka. Dengan fitur pelacakan makanan,
-            pengguna dapat dengan mudah mencatat apa yang mereka makan dan
-            melihat berapa banyak kalori yang telah mereka konsumsi. Aplikasi
-            ini juga menyediakan rekomendasi makanan sehat dan tips diet untuk
-            membantu pengguna mencapai tujuan kesehatan mereka. Kaloriku
-            dirancang dengan antarmuka yang sederhana dan mudah digunakan,
-            sehingga cocok untuk semua kalangan yang ingin menjaga pola makan
-            mereka.
+            Kaloriku it's a calorie tracking app that helps users monitor their
+            daily caloric intake and expenditure. It provides a user-friendly
+            interface for logging meals, snacks, and physical activities,
+            allowing users to set personalized goals and track their progress
+            towards a healthier lifestyle. With features like barcode scanning,
+            meal suggestions, and progress reports, Kaloriku empowers users to
+            make informed decisions about their nutrition and fitness journey.
           </p>{" "}
         </motion.div>
       </div>

@@ -8,42 +8,60 @@ export const HeroParallax = ({ products }) => {
   const secondRow = products.slice(5, 10);
   const thirdRow = products.slice(10, 15);
   const ref = React.useRef(null);
+  const [viewport, setViewport] = React.useState({ width: 0, height: 0 });
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
   });
 
+  React.useEffect(() => {
+    const updateViewport = () => {
+      setViewport({ width: window.innerWidth, height: window.innerHeight });
+    };
+
+    updateViewport();
+    window.addEventListener("resize", updateViewport);
+
+    return () => window.removeEventListener("resize", updateViewport);
+  }, []);
+
   const springConfig = { stiffness: 300, damping: 30, bounce: 150 };
+  const safeWidth = viewport.width || 1200;
+  const safeHeight = viewport.height || 800;
+  const translateDistanceX = Math.min(safeWidth * 0.8, 1000);
+  const translateStartY = -Math.min(safeHeight * 0.45, 520);
+  const translateEndY = Math.min(safeHeight * 0.25, 360);
+  const tiltXStart = safeWidth < 640 ? 8 : 15;
+  const tiltZStart = safeWidth < 640 ? 8 : 20;
 
   const translateX = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, 1000]),
-    springConfig
+    useTransform(scrollYProgress, [0, 1], [0, translateDistanceX]),
+    springConfig,
   );
   const translateXReverse = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, -1000]),
-    springConfig
+    useTransform(scrollYProgress, [0, 1], [0, -translateDistanceX]),
+    springConfig,
   );
   const rotateX = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [15, 0]),
-    springConfig
+    useTransform(scrollYProgress, [0, 0.2], [tiltXStart, 0]),
+    springConfig,
   );
   const opacity = useSpring(
     useTransform(scrollYProgress, [0, 0.2], [0.2, 1]),
-    springConfig
+    springConfig,
   );
   const rotateZ = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [20, 0]),
-    springConfig
+    useTransform(scrollYProgress, [0, 0.2], [tiltZStart, 0]),
+    springConfig,
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
-    springConfig
+    useTransform(scrollYProgress, [0, 0.2], [translateStartY, translateEndY]),
+    springConfig,
   );
   return (
     <div
       ref={ref}
-      className="h-[210vh] md:h-[250vh] py-40 overflow-x-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
-    >
+      className="min-h-[180vh] sm:min-h-[200vh] md:min-h-[220vh] lg:min-h-[250vh] py-24 sm:py-32 md:py-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
       <Header />
       <motion.div
         style={{
@@ -52,9 +70,8 @@ export const HeroParallax = ({ products }) => {
           translateY,
           opacity,
         }}
-        className=""
-      >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+        className="">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-8 sm:space-x-12 lg:space-x-20 mb-16 sm:mb-20">
           {firstRow.map((product) => (
             <ProductCard
               product={product}
@@ -63,7 +80,7 @@ export const HeroParallax = ({ products }) => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row  mb-20 space-x-20 ">
+        <motion.div className="flex flex-row mb-16 sm:mb-20 space-x-8 sm:space-x-12 lg:space-x-20">
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -72,7 +89,7 @@ export const HeroParallax = ({ products }) => {
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+        <motion.div className="flex flex-row-reverse space-x-reverse space-x-8 sm:space-x-12 lg:space-x-20">
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
@@ -113,13 +130,13 @@ export const ProductCard = ({ product, translate }) => {
         y: -20,
       }}
       key={product.title}
-      className="group/product aspect-video w-[30rem] relative shrink-0"
-    >
+      className="group/product aspect-video w-[18rem] sm:w-[22rem] lg:w-[30rem] relative shrink-0">
       <a href={product.link} className="block group-hover/product:shadow-2xl ">
         <Image
           src={product.thumbnail}
           height={1980}
           width={1080}
+          priority
           className="object-cover object-left-top absolute h-full w-full inset-0 grayscale hover:grayscale-0 transition-all ease duration-300"
           alt={product.title}
         />

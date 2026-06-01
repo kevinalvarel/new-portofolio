@@ -86,8 +86,7 @@ const Contact = () => {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             whileHover={OnHoverLeft}
-            style={{ willChange: "transform, opacity" }}
-          >
+            style={{ willChange: "transform, opacity" }}>
             <Image
               src={contact}
               layout="fill"
@@ -104,31 +103,28 @@ const Contact = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
-            style={{ willChange: "transform, opacity" }}
-          >
+            style={{ willChange: "transform, opacity" }}>
             Contact
           </motion.h1>
           <motion.p
-            className="title text-lg md:text-[15px] lg:text-[20px] mt-4 tracking-wider text-gray-500 leading-[1.7rem] md:mb-5"
+            className="title text-lg md:text-[15px] lg:text-[20px] mt-4 tracking-wider text-gray-500 leading-[1.7rem] md:mb-5 max-w-xl"
             variants={slideInLeftVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
-            style={{ willChange: "transform, opacity" }}
-          >
+            style={{ willChange: "transform, opacity" }}>
             Feel free to contact me if you have any{" "}
             <span className="bg-transparent sm:bg-gray-100 md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
               questions or just want to say hi.
             </span>
           </motion.p>
           <motion.p
-            className="title text-lg md:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5"
+            className="title text-lg md:text-[15px] lg:text-[20px] mt-4 tracking-wider text-gray-500 leading-[1.7rem] mb-5"
             variants={slideInLeftVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
-            style={{ willChange: "transform, opacity" }}
-          >
+            style={{ willChange: "transform, opacity" }}>
             <a href="mailto:muhammadkevinalvarel@gmail.com?subject=Hello&body=Hello Kevin,">
               muhammadkevinalvarel@gmail.com
             </a>
@@ -139,14 +135,12 @@ const Contact = () => {
             variants={iconContainerVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-          >
+            viewport={{ once: true, margin: "-100px" }}>
             <motion.a
               href="mailto:muhammadkevinalvarel@gmail.com?subject=Hello&body=Hello Kevin,"
               className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
               variants={iconVariants}
-              style={{ willChange: "transform, opacity" }}
-            >
+              style={{ willChange: "transform, opacity" }}>
               <IconMail className="text-3xl" />
             </motion.a>
 
@@ -156,8 +150,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
               variants={iconVariants}
-              style={{ willChange: "transform, opacity" }}
-            >
+              style={{ willChange: "transform, opacity" }}>
               <IconBrandGithub className="text-3xl" />
             </motion.a>
             <motion.a
@@ -166,8 +159,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
               variants={iconVariants}
-              style={{ willChange: "transform, opacity" }}
-            >
+              style={{ willChange: "transform, opacity" }}>
               <IconBrandLinkedin />
             </motion.a>
           </motion.div>
