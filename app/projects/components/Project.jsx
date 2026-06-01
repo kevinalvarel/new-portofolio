@@ -32,8 +32,7 @@ export default function Project() {
             transition={{
               delay: 0.7,
               type: "spring",
-            }}
-          >
+            }}>
             Other Projects
           </motion.h1>
         </div>
@@ -52,8 +51,7 @@ export default function Project() {
         transition={{
           type: "spring",
         }}
-        className="flex flex-row justify-center items-start flex-wrap gap-3 md:gap-5 my-5 "
-      >
+        className="flex flex-row justify-center items-start flex-wrap gap-3 md:gap-5 my-5 ">
         {Object.keys(category).map((key, index) => (
           <button
             key={index}
@@ -62,8 +60,7 @@ export default function Project() {
                 ? "bg-neutral-200 text-neutral-900 border-neutral-300 hover:bg-neutral-300"
                 : "bg-white text-neutral-700 border-neutral-300 hover:bg-neutral-100"
             }`}
-            onClick={() => setActiveCategory(key)}
-          >
+            onClick={() => setActiveCategory(key)}>
             {category[key]}
           </button>
         ))}
